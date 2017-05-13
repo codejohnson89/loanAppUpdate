@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+
+
+    <title>Minimum Bootstrap HTML Skeleton</title>
+
+    <!--  -->
+
+    <style>
+        .loan-form {
+            border: 1px solid #cdcdcd;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: -1px 1px 25px #333;
+            margin-top: 20px
+        }
+        
+        .stf-profile {
+            margin: 20px auto;
+        }
+        
+        .header {
+            margin: 30px auto;
+            border: 1px solid #cdcdcd;
+            border-radius: 15px;
+            box-shadow: 1px 0px 5px #333;
+        }
+        
+        .next {
+            float: right;
+            margin: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 header">
+                <div class="col-md-6 hidden-sm hidden-xs">
+                    <h2 style="display: inline-block">Loan Application</h2>
+                </div>
+                <div class="col-md-6 hidden-sm hidden-xs">
+                    <button class="btn btn-defualt next">Next</button>
+                </div>
+                <div class="col-sm-12 hidden-md hidden-lg">
+                    <h2 style="display: inline-block">Loan Application</h2>
+                    <button class="btn btn-defualt next">Next</button>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <h3>Start New Loan Application</h3>
+                <p>Using our online loan application, you can take your time and complete your application whenever it's convenient for you. And, you can always save your work and come back and complete it later if you need to.</p>
+                <p>If you're a returning customer, <a href="#">click here to login.</a></p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12  loan-form">
+
+                            <form id="PBNewApp">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="fname">First Name</label>
+                                        <input type="name" class="form-control" id="fname">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="lname">Last Name</label>
+                                        <input type="name" class="form-control" id="lname">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phonNum">Phone Number</label>
+                                        <input type="name" class="form-control" id="phoneNum">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email Address</label>
+                                        <input type="name" class="form-control" id="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="pswrd">Create a password</label>
+                                        <input type="name" class="form-control" id="pswrd">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="pswrd">Confirm password</label>
+                                        <input type="name" class="form-control" id="pswrd">
+                                    </div>
+
+                                </div>
+                                <div class="col-sm-6 text-center">
+                                    <p>Staff member you've been in contact with.</p>
+                                    <select id="cboStaff">
+                                        <option value="0">Not yet contacted office</option>
+                                        <option value="1">Crystal Johnson</option>
+                                        <option value="2">Mark Boyd</option>
+                                        <option value="3">Micah Middleton</option>
+                                    </select>
+
+                                    <p style="text-align: center">
+                                        <img class="img-responsive stf-profile" src="http://shackmanlab.org/wp-content/uploads/2013/07/person-placeholder.jpg" width="250">
+                                    </p>
+                                </div>
+                            </form>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script>
+    </script>
+
+</body>
+
+</html>
