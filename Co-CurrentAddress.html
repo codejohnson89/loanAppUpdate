@@ -68,7 +68,7 @@
                         <label id="lblStaffPhone">866-300-1550</label>
                     </div>
                     <div class="col-xs-6 head-btn">
-                        <a href="BorrowerEmployment.html">
+                        <a href="CurrentAddress.html">
                             <i class="fa fa-backward hidden-md hidden-lg" aria-hidden="true"></i>
                             <button class="hidden-xs hidden-sm">Previous</button>
                         </a>
@@ -76,7 +76,7 @@
                             <i class="fa fa-floppy-o hidden-md hidden-lg" aria-hidden="true"></i>
                             <button class="hidden-xs hidden-sm">Save</button>
                         </a>
-                        <a href="#">
+                        <a href="BorrowerEmployment.html">
                             <i class="fa fa-forward hidden-md hidden-lg" aria-hidden="true"></i>
                             <button class="hidden-xs hidden-sm">Next</button>
                         </a>
@@ -84,7 +84,9 @@
                     </div>
                 </div>
                 <form>
+                    <h3>Co-Borrower Address</h3>
                     <div class="form-group">
+                        <a data-toggle="modal" data-target="#helpAddress"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
                         <label for="fname">Current Adrress</label>
                         <input type="text" class="form-control" id="App_Ctrl_15">
                     </div>
@@ -155,10 +157,12 @@
                         </select>
                     </div>
                     <div class="form-group">
+
                         <label for="fname">Zip Code</label>
                         <input type="text" class="form-control" id="App_Ctrl_19">
                     </div>
                     <div class="form-group">
+                        <a data-toggle="modal" data-target="#helpRent"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
                         <p>Do you own or rent?</p>
                         <input type="radio" class="form-control radio-btn" id="App_Ctrl_20_rdo_1" value="572">
                         <label>Own</label>
@@ -166,12 +170,14 @@
                         <label>Rent</label>
                     </div>
                     <div class="form-group">
+                        <a data-toggle="modal" data-target="#helpYears"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
                         <label for="fname">For how many years?</label>
                         <input type="text" class="form-control" id="App_Ctrl_236">
                     </div>
                     <br>
                     <h5>Mailing Address, if different from Present Address</h5>
                     <div class="form-group">
+                        <a data-toggle="modal" data-target="#helpMailAddy"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
                         <label for="fname">Address</label>
                         <input type="text" class="form-control" id="App_Ctrl_396">
                     </div>
@@ -247,7 +253,7 @@
                     </div>
                 </form>
                 <div class="col-xs-12 head-btn loan-footer text-right">
-                    <a href="BorrowerEmployment.html">
+                    <a href="CurrentAddress.html">
                         <i class="fa fa-backward hidden-md hidden-lg" aria-hidden="true"></i>
                         <button class="hidden-xs hidden-sm">Previous</button>
                     </a>
@@ -255,11 +261,76 @@
                         <i class="fa fa-floppy-o hidden-md hidden-lg" aria-hidden="true"></i>
                         <button class="hidden-xs hidden-sm">Save</button>
                     </a>
-                    <a href="#">
+                    <a href="BorrowerEmployment.html">
                         <i class="fa fa-forward hidden-md hidden-lg" aria-hidden="true"></i>
                         <button class="hidden-xs hidden-sm">Next</button>
                     </a>
 
+                </div>
+                <!------------------------------------All modals on this page--------------------------------------->
+                <div id="helpAddress" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Online Help</h5>
+                            </div>
+                            <div class="modal-body">
+                                <h6>Current Address</h6>
+                                <p>Enter the street, city, state and zip of the borrower's present physical address.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="helpRent" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Online Help</h5>
+                            </div>
+                            <div class="modal-body">
+                                <h6>Own or Rent</h6>
+                                <p>Choose the option that describes the current status of the borrower's physical address. Rent if currently paying rent to a landlord or Own if currently owning free and clear or making mortgage loan payments.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="helpYears" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Online Help</h5>
+                            </div>
+                            <div class="modal-body">
+                                <h6>Number of Years</h6>
+                                <p>Enter the total number of years the borrower has lived at this address. If borrower has both rented and owned at this address, add the rented and owned years together.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="helpMailAddy" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Online Help</h5>
+                            </div>
+                            <div class="modal-body">
+                                <h6>Mailing Address</h6>
+                                <p>Enter the street, city, state and zip of the present mailing address.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

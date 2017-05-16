@@ -68,7 +68,7 @@
                         <label id="lblStaffPhone">866-300-1550</label>
                     </div>
                     <div class="col-xs-6 head-btn">
-                        <a href="BorrowerEmployment.html">
+                        <a href="Co-CurrentAddress.html">
                             <i class="fa fa-backward hidden-md hidden-lg" aria-hidden="true"></i>
                             <button class="hidden-xs hidden-sm">Previous</button>
                         </a>
@@ -76,7 +76,7 @@
                             <i class="fa fa-floppy-o hidden-md hidden-lg" aria-hidden="true"></i>
                             <button class="hidden-xs hidden-sm">Save</button>
                         </a>
-                        <a href="#">
+                        <a href="CoBorrowerEmployment.html">
                             <i class="fa fa-forward hidden-md hidden-lg" aria-hidden="true"></i>
                             <button class="hidden-xs hidden-sm">Next</button>
                         </a>
@@ -84,15 +84,15 @@
                     </div>
                 </div>
                 <form>
-
-                    <div class="form-group">
+                    <h3>Borrower Employment</h3>
+                    <div class="form-group"><a data-toggle="modal" data-target="#helpCoWork"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
                         <p>Are you self employed?</p>
                         <input type="radio" class="form-control radio-btn" id="App_Ctrl_75_rdo_1" value="37">
                         <label>Yes</label>
                         <input type="radio" class="form-control radio-btn" id="App_Ctrl_75_rdo_2" value="38">
                         <label>No</label>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group"><a data-toggle="modal" data-target="#helpCoEmp"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
                         <label>Name of Employer</label>
                         <input type="text" class="form-control" id="App_Ctrl_76">
                     </div>
@@ -171,15 +171,15 @@
                         <label>Zip</label>
                         <input type="text" class="form-control" id="App_Ctrl_433">
                     </div>
-                    <div class="form-group">
-                        <label>Phone</label>
+                    <div class="form-group"><a data-toggle="modal" data-target="#helpCoWorkPhone"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
+                        <label>Work Phone</label>
                         <input type="text" class="form-control" id="App_Ctrl_77">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group"><a data-toggle="modal" data-target="#helpCoTitle"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
                         <label>Position or Title</label>
                         <input type="text" class="form-control" id="App_Ctrl_78">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group"><a data-toggle="modal" data-target="#helpCoTimeLine"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
                         <label>How many years and months have you been with this employer?</label>
                         <br>
                         <select id="App_Ctrl_79" class="form-control" style="width: 75px; display: inline-block">
@@ -253,7 +253,7 @@
                         </select>
 
                     </div>
-                    <div class="form-group">
+                    <div class="form-group"><a data-toggle="modal" data-target="#helpCoExp"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
                         <label>How many years have you been in this line of work?</label>
                         <br>
                         <select id="App_Ctrl_81" style="WIDTH: 75px" class="form-control">
@@ -314,7 +314,7 @@
                     </div>
                 </form>
                 <div class="col-xs-12 head-btn loan-footer text-right">
-                    <a href="BorrowerEmployment.html">
+                    <a href="Co-CurrentAddress.html">
                         <i class="fa fa-backward hidden-md hidden-lg" aria-hidden="true"></i>
                         <button class="hidden-xs hidden-sm">Previous</button>
                     </a>
@@ -322,11 +322,108 @@
                         <i class="fa fa-floppy-o hidden-md hidden-lg" aria-hidden="true"></i>
                         <button class="hidden-xs hidden-sm">Save</button>
                     </a>
-                    <a href="#">
+                    <a href="CoBorrowerEmployment.html">
                         <i class="fa fa-forward hidden-md hidden-lg" aria-hidden="true"></i>
                         <button class="hidden-xs hidden-sm">Next</button>
                     </a>
 
+                </div>
+                <!----------------------------------MODALS--------------------------------------------------->
+                <div id="helpCoWork" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Online Help</h5>
+                            </div>
+                            <div class="modal-body">
+                                <h6>Self Employed</h6>
+                                <p>Check this box if the co-borrower is currently self employed.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="helpCoEmp" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Online Help</h5>
+                            </div>
+                            <div class="modal-body">
+                                <h6></h6>
+                                <p>Enter the name of the co-borrower's current employer.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="helpCoWorkPhone" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Online Help</h5>
+                            </div>
+                            <div class="modal-body">
+                                <h6>Work Phone</h6>
+                                <p>Enter the ten digit business phone number with area code of the co-borrower separated by hyphens. Example: 555-555-5555. </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="helpCoTitle" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Online Help</h5>
+                            </div>
+                            <div class="modal-body">
+                                <h6>Position, Title or Type of Business</h6>
+                                <p>Enter the position, title or type of business for co-borrower. If retired, enter "Retired" and leave all other fields blank. If a stay at-home spouse, enter "homemaker" and leave all other fields blank. </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="helpCoTimeLine" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Online Help</h5>
+                            </div>
+                            <div class="modal-body">
+                                <h6>Years with this Employer</h6>
+                                <p>Select from the drop-down list how many years and months have you been with this employer? </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="helpCoExp" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Online Help</h5>
+                            </div>
+                            <div class="modal-body">
+                                <h6>Position/Title/Type of Business</h6>
+                                <p>Enter the position, title or type of business for co-borrower. If retired, enter "Retired" and leave all other fields blank. If a stay at-home spouse, enter "homemaker" and leave all other fields blank.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
