@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://use.fontawesome.com/d11c41d7e5.js"></script>
+    <link rel="stylesheet" href="LoanAppStyle.css">
+
+    <title>Loan App Frame</title>
+
+    <!--  -->
+
+    <style>
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-4 hidden-xs section-info">
+                <img class="img-responsive img-circle stf-profile hidden-xs" src="http://shackmanlab.org/wp-content/uploads/2013/07/person-placeholder.jpg" width="200">
+                <div class="col-xs-12">
+                    <button class="btn btn-defualt btn-main">Borrowers</button>
+                    <ul class="btn-list">
+                        <li>Borrower Information</li>
+                        <li>Co-Borrower Information</li>
+                        <li>Current Address</li>
+                        <li>Co-Borrower Address</li>
+                        <li>Borrower Employment</li>
+                        <li>Co-Borrower Employment</li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="col-sm-8 col-xs-12 loan-form">
+                <div class="col-xs-12 header">
+                    <div class="col-xs-6">
+                        <label id="lblStaff">Staff Name Placeholder</label>
+                        <br>
+                        <label id="lblStaffPhone">866-300-1550</label>
+                    </div>
+                    <div class="col-xs-6 head-btn">
+                        <a href="QuickLoanApp.html">
+                            <i class="fa fa-backward hidden-md hidden-lg" aria-hidden="true"></i>
+                            <button class="hidden-xs hidden-sm">Previous</button>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-floppy-o hidden-md hidden-lg" aria-hidden="true"></i>
+                            <button class="hidden-xs hidden-sm">Save</button>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-forward hidden-md hidden-lg" aria-hidden="true"></i>
+                            <button class="hidden-xs hidden-sm">Next</button>
+                        </a>
+
+                    </div>
+                </div>
+                <form>
+                    <h3>HMDA</h3>
+                    <p>The following information is requested by the Federal Government for certain types of loans related to a dwelling in order to monitor the lender's compliance with equal credit opportunity, fair housing and home mortgage disclosure laws. You are not required to furnish this information, but are encouraged to do so. The law provides that a Lender may not discriminate either on the basis of this information, or on whether you choose to furnish it. If you furnish the information, please provide both ethnicity and race. For race you may check more than one designation. If you do not furnish ethnicity, race, or sex, under Federal regulations, this lender is required to note the information on the basis of visual observation and surname if you have made this application in person. If you do not furnish this information, please check the box below. (Lender must review the above material to assure that the disclosures satisfy all requirements to which lender is subject under applicable state law for the particular type of loan applied for.)</p>
+
+                    <div class="form-group">
+                        <p>Borrower</p>
+                        <br>
+                        <input type="checkbox" class="form-control radio-btn" id="App_Ctrl_188" onclick="checkBox()">
+                        <label>I do not wish to furnish this information</label>
+
+                    </div>
+
+
+                    <!--------------------------Everything below will display if the user does not check the box above ---------------------------------->
+                    <section>
+                        <div class="form-group">
+                            <p>Ethnicity</p>
+                            <br>
+                            <input type="radio" class="form-control radio-btn" id="App_Ctrl_rdo_1" value="333">
+                            <label>Hispanic or Latino</label>
+                            <input type="radio" class="form-control radio-btn" id="App_Ctrl_rdo_2" value="334">
+                            <label>Not Hispanic or Latino</label>
+
+                        </div>
+
+                        <div class="form-group">
+                            <p>Ethnicity</p>
+                            <br>
+                            <input type="checkbox" class="form-control radio-btn" id="App_Ctrl_190" value="333">
+                            <label>American Indian or Alaska Native</label>
+                            <br>
+                            <input type="checkbox" class="form-control radio-btn" id="App_Ctrl_191" value="334">
+                            <label>White</label>
+                            <br>
+                            <input type="checkbox" class="form-control radio-btn" id="App_Ctrl_192" value="334">
+                            <label>Asian</label>
+                            <br>
+                            <input type="checkbox" class="form-control radio-btn" id="App_Ctrl_193" value="334">
+                            <label>Native Hawiian or Other Pacific Islander</label>
+                            <br>
+                            <input type="checkbox" class="form-control radio-btn" id="App_Ctrl_194" value="334">
+                            <label>Black or African American</label>
+
+                        </div>
+
+                        <div class="form-group">
+                            <p>Ethnicity</p>
+                            <br>
+                            <input type="radio" class="form-control radio-btn" id="App_Ctrl_rdo_195_1" value="342">
+                            <label>Male</label>
+                            <input type="radio" class="form-control radio-btn" id="App_Ctrl_rdo_195_2" value="343">
+                            <label>Female</label>
+
+                        </div>
+                    </section>
+                    <div class="col-xs-12 head-btn loan-footer text-right">
+                        <a href="QuickLoanApp.html">
+                            <i class="fa fa-backward hidden-md hidden-lg" aria-hidden="true"></i>
+                            <button class="hidden-xs hidden-sm">Previous</button>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-floppy-o hidden-md hidden-lg" aria-hidden="true"></i>
+                            <button class="hidden-xs hidden-sm">Save</button>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-forward hidden-md hidden-lg" aria-hidden="true"></i>
+                            <button class="hidden-xs hidden-sm">Next</button>
+                        </a>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script>
+        function checkBox() {
+            if (document.getElementById("App_Ctrl_188").checked) {
+                $("section").css("display", "none");
+            } else {
+                $("section").css("display", "block");
+            }
+
+
+
+        }
+
+    </script>
+
+</body>
+
+</html>
