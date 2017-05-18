@@ -169,31 +169,57 @@
                     </div>
                     <div class="form-group">
                         <p>Will there be a co-borrower on this loan?</p>
-                        <input type="radio" name="App_Ctrl_13_rdo" class="form-control radio-btn" id="App_Ctrl_13_rdo_1" value="37">
+                        <input type="radio" name="App_Ctrl_13_rdo" class="form-control radio-btn" id="App_Ctrl_13_rdo_1" value="37" onclick="coBor()">
                         <label>Yes</label>
-                        <input type="radio" name="App_Ctrl_13_rdo" class="form-control radio-btn" id="App_Ctrl_13_rdo_2" value="38">
+                        <input type="radio" name="App_Ctrl_13_rdo" class="form-control radio-btn" id="App_Ctrl_13_rdo_2" value="38" onclick="coBor()">
                         <label>No</label>
                     </div>
+                    <!----------The beginning of the co-borrower info which will display if Yes is selected from the input section above--------------->
+                    <div class="co-borrower">
+                        <h3>Co-Borrower Information</h3>
+                        <div class="form-group">
+                            <a data-toggle="modal" data-target="#helpCoFName"><i class="fa fa-question-circle-o" aria - hidden="true"></i></a>
+                            <label>First Name</label>
+                            <input type="text" class="form-control" id="App_Ctrl_1">
+                        </div>
+                        <div class="form-group">
+                            <a data-toggle="modal" data-target="#helpCoMName"><i class="fa fa-question-circle-o" aria - hidden="true"></i></a>
+                            <label>Middle Name</label>
+                            <input type="text" class="form-control" id="App_Ctrl_2">
+                        </div>
+                        <div class="form-group">
+                            <a data-toggle="modal" data-target="#helpCoLName"><i class="fa fa-question-circle-o" aria - hidden="true"></i></a>
+                            <label>Last Name</label>
+                            <input type="text" class="form-control" id="App_Ctrl_3">
+                        </div>
+                        <div class="form-group">
+                            <a data-toggle="modal" data-target="#helpCoSSN"><i class="fa fa-question-circle-o" aria - hidden="true"></i></a>
+                            <label>Social Security Number</label>
+                            <input type="text" class="form-control" id="App_Ctrl_4">
+                        </div>
+
+                    </div>
+                    <!--------------The end of the co-borrower info section--------------------->
                     <div class="form-group">
                         <a data-toggle="modal" data-target="#helpLoanPurp"><i class="fa fa-question-circle-o" aria - hidden="true"></i></a>
                         <label>Which best describes the purpose of this loan?</label>
                         <br>
-                        <input type="radio" name="App_Ctrl_35_rdo" class="form-control radio-btn " id="App_Ctrl_35_rdo_1" value="363" onclick="checkBox()">
+                        <input type="radio" name="App_Ctrl_35_rdo" class="form-control radio-btn " id="App_Ctrl_35_rdo_1" value="363" onclick="PropLoc()">
                         <p>Purchasing a home I've already found</p>
                         <br>
-                        <input type="radio" name="App_Ctrl_35_rdo" class="form-control radio-btn" id="App_Ctrl_35_rdo_2" value="364" onclick="checkBox()">
+                        <input type="radio" name="App_Ctrl_35_rdo" class="form-control radio-btn" id="App_Ctrl_35_rdo_2" value="364" onclick="PropLoc()">
                         <p>Purchasing a home that I haven't located yet</p>
                         <br>
-                        <input type="radio" name="App_Ctrl_35_rdo" class="form-control radio-btn" id="App_Ctrl_35_rdo_3" value="365" onclick="checkBox()">
+                        <input type="radio" name="App_Ctrl_35_rdo" class="form-control radio-btn" id="App_Ctrl_35_rdo_3" value="365" onclick="PropLoc()">
                         <p>Refinance my existing loan balance</p>
                         <br>
-                        <input type="radio" name="App_Ctrl_35_rdo" class="form-control radio-btn" id="App_Ctrl_35_rdo_5" value="367" onclick="checkBox()">
+                        <input type="radio" name="App_Ctrl_35_rdo" class="form-control radio-btn" id="App_Ctrl_35_rdo_5" value="367" onclick="PropLoc()">
                         <p>Construction</p>
                         <br>
-                        <input type="radio" name="App_Ctrl_35_rdo" class="form-control radio-btn" id="App_Ctrl_35_rdo_6" value="368" onclick="checkBox()">
+                        <input type="radio" name="App_Ctrl_35_rdo" class="form-control radio-btn" id="App_Ctrl_35_rdo_6" value="368" onclick="PropLoc()">
                         <p>Construction Permanent</p>
                         <br>
-                        <input type="radio" name="App_Ctrl_35_rdo" class="form-control radio-btn" id="App_Ctrl_35_rdo_7" value="369" onclick="checkBox()">
+                        <input type="radio" name="App_Ctrl_35_rdo" class="form-control radio-btn" id="App_Ctrl_35_rdo_7" value="369" onclick="PropLoc()">
                         <p>Other</p>
                         <br>
                         <p>Explain if other</p>
@@ -204,81 +230,84 @@
 
 
                     <!------This section is the beginning of the option of Loan Purpose option 1 and 3. All other options will not ask for the location. Also all attributes are the same for all input fields.----->
-                    <div class="form-group add-field">
-                        <a data-toggle="modal" data-target="#helpPropAddy"><i class="fa fa-question-circle-o" aria - hidden="true"></i></a>
-                        <label>Address</label>
-                        <input type="text" class="form-control" id="App_Ctrl_40">
-                    </div>
-                    <div class="form-group add-field">
-                        <label>City</label>
-                        <input type="text" class="form-control" id="App_Ctrl_42">
-                    </div>
-                    <div class="form-group add-field">
-                        <label>State</label>
-                        <br>
-                        <select type="text" class="form-control" id="App_Ctrl_43">
-                            <option value="1"> </option>
-                            <option value="401">Alabama</option>
-                            <option value="402">Alaska</option>
-                            <option value="403">Arizona</option>
-                            <option value="404">Arkansas</option>
-                            <option value="405">California</option>
-                            <option value="406">Colorado</option>
-                            <option value="407">Connecticut</option>
-                            <option value="408">Delaware</option>
-                            <option value="13577">District of Columbia</option>
-                            <option value="409">Florida</option>
-                            <option value="410">Georgia</option>
-                            <option value="13567">Guam</option>
-                            <option value="411">Hawaii</option>
-                            <option value="412">Idaho</option>
-                            <option value="413">Illinois</option>
-                            <option value="414">Indiana</option>
-                            <option value="415">Iowa</option>
-                            <option value="416">Kansas</option>
-                            <option value="417">Kentucky</option>
-                            <option value="418">Louisiana</option>
-                            <option value="419">Maine</option>
-                            <option value="420">Maryland</option>
-                            <option value="421">Massachusetts</option>
-                            <option value="422">Michigan</option>
-                            <option value="423">Minnesota</option>
-                            <option value="424">Mississippi</option>
-                            <option value="425">Missouri</option>
-                            <option value="426">Montana</option>
-                            <option value="427">Nebraska</option>
-                            <option value="428">Nevada</option>
-                            <option value="429">New Hampshire</option>
-                            <option value="430">New Jersey</option>
-                            <option value="431">New Mexico</option>
-                            <option value="432">New York</option>
-                            <option value="433">North Carolina</option>
-                            <option value="434">North Dakota</option>
-                            <option value="435">Ohio</option>
-                            <option value="436">Oklahoma</option>
-                            <option value="437">Oregon</option>
-                            <option value="438">Pennsylvania</option>
-                            <option value="13566">Puerto Rico</option>
-                            <option value="439">Rhode Island</option>
-                            <option value="440">South Carolina</option>
-                            <option value="441">South Dakota</option>
-                            <option value="13568">St. Croix</option>
-                            <option value="13569">St. John</option>
-                            <option value="13570">St. Thomas</option>
-                            <option value="442">Tennessee</option>
-                            <option value="443">Texas</option>
-                            <option value="444">Utah</option>
-                            <option value="445">Vermont</option>
-                            <option value="446">Virginia</option>
-                            <option value="447">Washington</option>
-                            <option value="448">West Virginia</option>
-                            <option value="449">Wisconsin</option>
-                            <option value="450">Wyoming</option>
-                        </select>
-                    </div>
-                    <div class="form-group add-field">
-                        <label>Zip Code</label>
-                        <input type="text" class="form-control" id="App_Ctrl_44">
+                    <div class="add-field">
+                        <h3>Property Location</h3>
+                        <div class="form-group ">
+                            <a data-toggle="modal" data-target="#helpPropAddy"><i class="fa fa-question-circle-o" aria - hidden="true"></i></a>
+                            <label>Address</label>
+                            <input type="text" class="form-control" id="App_Ctrl_40">
+                        </div>
+                        <div class="form-group ">
+                            <label>City</label>
+                            <input type="text" class="form-control" id="App_Ctrl_42">
+                        </div>
+                        <div class="form-group ">
+                            <label>State</label>
+                            <br>
+                            <select type="text" class="form-control" id="App_Ctrl_43">
+                                <option value="1"> </option>
+                                <option value="401">Alabama</option>
+                                <option value="402">Alaska</option>
+                                <option value="403">Arizona</option>
+                                <option value="404">Arkansas</option>
+                                <option value="405">California</option>
+                                <option value="406">Colorado</option>
+                                <option value="407">Connecticut</option>
+                                <option value="408">Delaware</option>
+                                <option value="13577">District of Columbia</option>
+                                <option value="409">Florida</option>
+                                <option value="410">Georgia</option>
+                                <option value="13567">Guam</option>
+                                <option value="411">Hawaii</option>
+                                <option value="412">Idaho</option>
+                                <option value="413">Illinois</option>
+                                <option value="414">Indiana</option>
+                                <option value="415">Iowa</option>
+                                <option value="416">Kansas</option>
+                                <option value="417">Kentucky</option>
+                                <option value="418">Louisiana</option>
+                                <option value="419">Maine</option>
+                                <option value="420">Maryland</option>
+                                <option value="421">Massachusetts</option>
+                                <option value="422">Michigan</option>
+                                <option value="423">Minnesota</option>
+                                <option value="424">Mississippi</option>
+                                <option value="425">Missouri</option>
+                                <option value="426">Montana</option>
+                                <option value="427">Nebraska</option>
+                                <option value="428">Nevada</option>
+                                <option value="429">New Hampshire</option>
+                                <option value="430">New Jersey</option>
+                                <option value="431">New Mexico</option>
+                                <option value="432">New York</option>
+                                <option value="433">North Carolina</option>
+                                <option value="434">North Dakota</option>
+                                <option value="435">Ohio</option>
+                                <option value="436">Oklahoma</option>
+                                <option value="437">Oregon</option>
+                                <option value="438">Pennsylvania</option>
+                                <option value="13566">Puerto Rico</option>
+                                <option value="439">Rhode Island</option>
+                                <option value="440">South Carolina</option>
+                                <option value="441">South Dakota</option>
+                                <option value="13568">St. Croix</option>
+                                <option value="13569">St. John</option>
+                                <option value="13570">St. Thomas</option>
+                                <option value="442">Tennessee</option>
+                                <option value="443">Texas</option>
+                                <option value="444">Utah</option>
+                                <option value="445">Vermont</option>
+                                <option value="446">Virginia</option>
+                                <option value="447">Washington</option>
+                                <option value="448">West Virginia</option>
+                                <option value="449">Wisconsin</option>
+                                <option value="450">Wyoming</option>
+                            </select>
+                        </div>
+                        <div class="form-group ">
+                            <label>Zip Code</label>
+                            <input type="text" class="form-control" id="App_Ctrl_44">
+                        </div>
                     </div>
                     <!--------------------End of the Location section------>
                     <div class="form-group">
@@ -473,14 +502,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
     <script>
-        function checkBox() {
+        function PropLoc() {
             if (document.getElementById("App_Ctrl_35_rdo_1").checked || document.getElementById("App_Ctrl_35_rdo_3").checked) {
-                $(".add-field").css("display", "none");
-            } else {
                 $(".add-field").css("display", "block");
+            } else {
+                $(".add-field").css("display", "none");
             }
+        }
 
-
+        function coBor() {
+            if (document.getElementById("App_Ctrl_13_rdo_1").checked) {
+                $(".co-borrower").css("display", "block");
+            } else {
+                $(".co-borrower").css("display", "none");
+            }
         }
 
     </script>
