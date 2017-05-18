@@ -76,7 +76,7 @@
 
 
                     <!--------------------------Everything below will display if the user does not check the box above ---------------------------------->
-                    <section>
+                    <div class="data-info">
                         <div class="form-group">
                             <p>Ethnicity</p>
                             <br>
@@ -116,7 +116,7 @@
                             <label>Female</label>
 
                         </div>
-                    </section>
+                    </div>
                     <div class="col-xs-12 head-btn loan-footer text-right">
                         <a href="QuickLoanApp.html">
                             <i class="fa fa-backward hidden-md hidden-lg" aria-hidden="true"></i>
@@ -144,13 +144,10 @@
     <script>
         function checkBox() {
             if (document.getElementById("App_Ctrl_188").checked) {
-                $("section").css("display", "none");
+                $(".data-info").css("display", "none");
             } else {
-                $("section").css("display", "block");
+                $(".data-info").css("display", "block");
             }
-
-
-
         }
 
     </script>
