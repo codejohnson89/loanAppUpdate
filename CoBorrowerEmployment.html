@@ -88,14 +88,18 @@
                     <h3>Co-Borrower Employment</h3>
                     <div class="form-group"><a data-toggle="modal" data-target="#helpCoWork"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
                         <p>Are you self employed?</p>
-                        <input type="radio" class="form-control radio-btn" id="App_Ctrl_282_rdo_1" value="37">
+                        <input type="radio" class="form-control radio-btn" name="App_Ctrl_282_rdo" id="App_Ctrl_282_rdo_1" value="37" onclick="employment()">
                         <label>Yes</label>
-                        <input type="radio" class="form-control radio-btn" id="App_Ctrl_282_rdo_2" value="38">
+                        <input type="radio" class="form-control radio-btn" name="App_Ctrl_282_rdo" id="App_Ctrl_282_rdo_2" value="38" onclick="employment()">
                         <label>No</label>
                     </div>
-                    <div class="form-group"><a data-toggle="modal" data-target="#helpCoEmp"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
+                    <div class="form-group emp"><a data-toggle="modal" data-target="#helpCoEmp"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
                         <label>Name of Employer</label>
                         <input type="text" class="form-control" id="App_Ctrl_283">
+                    </div>
+                    <div class="form-group self-emp"><a data-toggle="modal" data-target="#helpCoEmp"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
+                        <label>Name of Company or Business</label>
+                        <input type="text" class="form-control" id="App_Ctrl_289">
                     </div>
                     <div class="form-group">
                         <label>Address</label>
@@ -172,15 +176,23 @@
                         <label>Zip</label>
                         <input type="text" class="form-control" id="App_Ctrl_445">
                     </div>
-                    <div class="form-group"><a data-toggle="modal" data-target="#helpCoWorkPhone"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
+                    <div class="form-group emp"><a data-toggle="modal" data-target="#helpCoWorkPhone"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
                         <label>Work Phone</label>
                         <input type="text" class="form-control" id="App_Ctrl_284">
                     </div>
-                    <div class="form-group"><a data-toggle="modal" data-target="#helpCoTitle"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
+                    <div class="form-group self-emp"><a data-toggle="modal" data-target="#helpCoWorkPhone"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
+                        <label>Work Phone</label>
+                        <input type="text" class="form-control" id="App_Ctrl_290">
+                    </div>
+                    <div class="form-group emp"><a data-toggle="modal" data-target="#helpCoTitle"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
                         <label>Position or Title</label>
                         <input type="text" class="form-control" id="App_Ctrl_285">
                     </div>
-                    <div class="form-group"><a data-toggle="modal" data-target="#helpCoTimeLine"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
+                    <div class="form-group self-emp"><a data-toggle="modal" data-target="#helpCoTitle"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
+                        <label>Type of Business</label>
+                        <input type="text" class="form-control" id="App_Ctrl_291">
+                    </div>
+                    <div class="form-group emp"><a data-toggle="modal" data-target="#helpCoTimeLine"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
                         <label>How many years and months have you been with this employer?</label>
                         <br>
                         <select id="App_Ctrl_286" class="form-control" style="width: 75px; display: inline-block">
@@ -254,11 +266,146 @@
                         </select>
 
                     </div>
-                    <div class="form-group">
+                    <div class="form-group self-emp"><a data-toggle="modal" data-target="#helpCoTimeLine"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
+                        <label>How many years and months have you been self employed in this business?</label>
+                        <br>
+                        <select id="App_Ctrl_292" class="form-control" style="width: 75px; display: inline-block">
+                            <option value="1"> </option>
+                            <option value="619">0</option>
+                            <option value="39">1</option>
+                            <option value="40">2</option>
+                            <option value="41">3</option>
+                            <option value="42">4</option>
+                            <option value="43">5</option>
+                            <option value="44">6</option>
+                            <option value="45">7</option>
+                            <option value="46">8</option>
+                            <option value="47">9</option>
+                            <option value="48">10</option>
+                            <option value="49">11</option>
+                            <option value="50">12</option>
+                            <option value="51">13</option>
+                            <option value="52">14</option>
+                            <option value="53">15</option>
+                            <option value="54">16</option>
+                            <option value="55">17</option>
+                            <option value="56">18</option>
+                            <option value="57">19</option>
+                            <option value="58">20</option>
+                            <option value="59">21</option>
+                            <option value="60">22</option>
+                            <option value="61">23</option>
+                            <option value="62">24</option>
+                            <option value="63">25</option>
+                            <option value="64">26</option>
+                            <option value="65">27</option>
+                            <option value="66">28</option>
+                            <option value="67">29</option>
+                            <option value="68">30</option>
+                            <option value="69">31</option>
+                            <option value="479">32</option>
+                            <option value="480">33</option>
+                            <option value="481">34</option>
+                            <option value="482">35</option>
+                            <option value="483">36</option>
+                            <option value="484">37</option>
+                            <option value="485">38</option>
+                            <option value="486">39</option>
+                            <option value="487">40</option>
+                            <option value="488">41</option>
+                            <option value="489">42</option>
+                            <option value="490">43</option>
+                            <option value="491">44</option>
+                            <option value="492">45</option>
+                            <option value="493">46</option>
+                            <option value="494">47</option>
+                            <option value="495">48</option>
+                            <option value="496">49</option>
+                            <option value="497">50</option>
+                        </select>
+                        <select id="App_Ctrl_293" class="form-control" style="width: 75px; display: inline-block">
+                            <option value="1"> </option>
+                            <option value="619">0</option>
+                            <option value="39">1</option>
+                            <option value="40">2</option>
+                            <option value="41">3</option>
+                            <option value="42">4</option>
+                            <option value="43">5</option>
+                            <option value="44">6</option>
+                            <option value="45">7</option>
+                            <option value="46">8</option>
+                            <option value="47">9</option>
+                            <option value="48">10</option>
+                            <option value="49">11</option>
+                        </select>
+
+                    </div>
+                    <div class="form-group emp">
                         <a data-toggle="modal" data-target="#helpCoExp"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
                         <label>How many years have you been in this line of work?</label>
                         <br>
                         <select id="App_Ctrl_288" style="WIDTH: 75px" class="form-control">
+                            <option value="1"> </option>
+                            <option value="619">0</option>
+                            <option value="39">1</option>
+                            <option value="40">2</option>
+                            <option value="41">3</option>
+                            <option value="42">4</option>
+                            <option value="43">5</option>
+                            <option value="44">6</option>
+                            <option value="45">7</option>
+                            <option value="46">8</option>
+                            <option value="47">9</option>
+                            <option value="48">10</option>
+                            <option value="49">11</option>
+                            <option value="50">12</option>
+                            <option value="51">13</option>
+                            <option value="52">14</option>
+                            <option value="53">15</option>
+                            <option value="54">16</option>
+                            <option value="55">17</option>
+                            <option value="56">18</option>
+                            <option value="57">19</option>
+                            <option value="58">20</option>
+                            <option value="59">21</option>
+                            <option value="60">22</option>
+                            <option value="61">23</option>
+                            <option value="62">24</option>
+                            <option value="63">25</option>
+                            <option value="64">26</option>
+                            <option value="65">27</option>
+                            <option value="66">28</option>
+                            <option value="67">29</option>
+                            <option value="68">30</option>
+                            <option value="69">31</option>
+                            <option value="479">32</option>
+                            <option value="480">33</option>
+                            <option value="481">34</option>
+                            <option value="482">35</option>
+                            <option value="483">36</option>
+                            <option value="484">37</option>
+                            <option value="485">38</option>
+                            <option value="486">39</option>
+                            <option value="487">40</option>
+                            <option value="488">41</option>
+                            <option value="489">42</option>
+                            <option value="490">43</option>
+                            <option value="491">44</option>
+                            <option value="492">45</option>
+                            <option value="493">46</option>
+                            <option value="494">47</option>
+                            <option value="495">48</option>
+                            <option value="496">49</option>
+                            <option value="497">50</option>
+                        </select>
+
+                    </div>
+
+                    <div class="form-group self-emp">
+                        <a data-toggle="modal" data-target="#helpCoExp"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
+                        <label>How many years have you been in this line of work?</label>
+                        <br>
+                        <select id="App_Ctrl_294" style="WIDTH: 75px" class="form-control">
                             <option value="1"> </option>
                             <option value="619">0</option>
                             <option value="39">1</option>
@@ -435,7 +582,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
     <script>
-
+        function employment() {
+            if (document.getElementById("App_Ctrl_282_rdo_1").checked) {
+                $(".self-emp").css("display", "block");
+                $(".emp").css("display", "none");
+            } else if (document.getElementById("App_Ctrl_282_rdo_2").checked) {
+                $(".self-emp").css("display", "none");
+                $(".emp").css("display", "block");
+            } else {
+                console.log("Nothing");
+            }
+        }
 
     </script>
 

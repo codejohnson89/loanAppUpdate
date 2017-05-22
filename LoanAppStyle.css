@@ -62,6 +62,9 @@ button {
 .loan-footer {
     margin: 10px;
 }
+.self-emp {
+    display: none;
+}
 
 /*********************Modal Styling********************************************************/
 
