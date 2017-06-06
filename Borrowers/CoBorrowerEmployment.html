@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="https://use.fontawesome.com/d11c41d7e5.js"></script>
-    <link rel="stylesheet" href="LoanAppStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="/loanAppUpdate/LoanAppStyle.css">
 
-    <title>CO-BORROWER EMPLOYMENT</title>
+    <title>CO-BORROWER employment</title>
 
     <!--  -->
 
@@ -33,8 +34,8 @@
                         <li>Co-Borrower Information</li>
                         <li>Current Address</li>
                         <li>Co-Borrower Address</li>
-                        <li>Borrower Employment</li>
-                        <li>Co-Borrower Employment</li>
+                        <li>Borrower employmentCo</li>
+                        <li>Co-Borrower employmentCo</li>
                     </ul>
                     <button class="btn btn-defualt btn-main">Property</button>
                     <ul class="btn-list">
@@ -68,7 +69,7 @@
                         <label id="lblStaffPhone">866-300-1550</label>
                     </div>
                     <div class="col-xs-6 head-btn">
-                        <a href="BorrowerEmployment.html">
+                        <a href="BorroweremploymentCo.html">
                             <i class="fa fa-backward hidden-md hidden-lg" aria-hidden="true"></i>
                             <button class="hidden-xs hidden-sm">Previous</button>
                         </a>
@@ -86,18 +87,18 @@
 
                 <form>
                     <h3>Co-Borrower Employment</h3>
-                    <div class="form-group"><a data-toggle="modal" data-target="#helpCoWork"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
+                    <div class="form-group"><a data-toggle="modal" data-target="#helpCoWork"><i class="fa fa-question-circle-o animated rollIn" aria-hidden="true"></i></a>
                         <p>Are you self employed?</p>
-                        <input type="radio" class="form-control radio-btn" name="App_Ctrl_282_rdo" id="App_Ctrl_282_rdo_1" value="37" onclick="employment()">
+                        <input type="radio" class="form-control radio-btn" name="App_Ctrl_282_rdo" id="App_Ctrl_282_rdo_1" value="37" onclick="employmentCo()">
                         <label>Yes</label>
-                        <input type="radio" class="form-control radio-btn" name="App_Ctrl_282_rdo" id="App_Ctrl_282_rdo_2" value="38" onclick="employment()">
+                        <input type="radio" class="form-control radio-btn" name="App_Ctrl_282_rdo" id="App_Ctrl_282_rdo_2" value="38" onclick="employmentCo()">
                         <label>No</label>
                     </div>
-                    <div class="form-group emp"><a data-toggle="modal" data-target="#helpCoEmp"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
+                    <div class="form-group emp"><a data-toggle="modal" data-target="#helpCoEmp"><i class="fa fa-question-circle-o animated rollIn" aria-hidden="true"></i></a>
                         <label>Name of Employer</label>
                         <input type="text" class="form-control" id="App_Ctrl_283">
                     </div>
-                    <div class="form-group self-emp"><a data-toggle="modal" data-target="#helpCoEmp"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
+                    <div class="form-group self-emp"><a data-toggle="modal" data-target="#helpCoEmp"><i class="fa fa-question-circle-o animated rollIn" aria-hidden="true"></i></a>
                         <label>Name of Company or Business</label>
                         <input type="text" class="form-control" id="App_Ctrl_289">
                     </div>
@@ -176,23 +177,23 @@
                         <label>Zip</label>
                         <input type="text" class="form-control" id="App_Ctrl_445">
                     </div>
-                    <div class="form-group emp"><a data-toggle="modal" data-target="#helpCoWorkPhone"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
+                    <div class="form-group emp"><a data-toggle="modal" data-target="#helpCoWorkPhone"><i class="fa fa-question-circle-o animated rollIn" aria-hidden="true"></i></a>
                         <label>Work Phone</label>
                         <input type="text" class="form-control" id="App_Ctrl_284">
                     </div>
-                    <div class="form-group self-emp"><a data-toggle="modal" data-target="#helpCoWorkPhone"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
+                    <div class="form-group self-emp"><a data-toggle="modal" data-target="#helpCoWorkPhone"><i class="fa fa-question-circle-o animated rollIn" aria-hidden="true"></i></a>
                         <label>Work Phone</label>
                         <input type="text" class="form-control" id="App_Ctrl_290">
                     </div>
-                    <div class="form-group emp"><a data-toggle="modal" data-target="#helpCoTitle"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
+                    <div class="form-group emp"><a data-toggle="modal" data-target="#helpCoTitle"><i class="fa fa-question-circle-o animated rollIn" aria-hidden="true"></i></a>
                         <label>Position or Title</label>
                         <input type="text" class="form-control" id="App_Ctrl_285">
                     </div>
-                    <div class="form-group self-emp"><a data-toggle="modal" data-target="#helpCoTitle"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
+                    <div class="form-group self-emp"><a data-toggle="modal" data-target="#helpCoTitle"><i class="fa fa-question-circle-o animated rollIn" aria-hidden="true"></i></a>
                         <label>Type of Business</label>
                         <input type="text" class="form-control" id="App_Ctrl_291">
                     </div>
-                    <div class="form-group emp"><a data-toggle="modal" data-target="#helpCoTimeLine"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
+                    <div class="form-group emp"><a data-toggle="modal" data-target="#helpCoTimeLine"><i class="fa fa-question-circle-o animated rollIn" aria-hidden="true"></i></a>
                         <label>How many years and months have you been with this employer?</label>
                         <br>
                         <select id="App_Ctrl_286" class="form-control" style="width: 75px; display: inline-block">
@@ -266,7 +267,7 @@
                         </select>
 
                     </div>
-                    <div class="form-group self-emp"><a data-toggle="modal" data-target="#helpCoTimeLine"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
+                    <div class="form-group self-emp"><a data-toggle="modal" data-target="#helpCoTimeLine"><i class="fa fa-question-circle-o animated rollIn" aria-hidden="true"></i></a>
                         <label>How many years and months have you been self employed in this business?</label>
                         <br>
                         <select id="App_Ctrl_292" class="form-control" style="width: 75px; display: inline-block">
@@ -341,7 +342,7 @@
 
                     </div>
                     <div class="form-group emp">
-                        <a data-toggle="modal" data-target="#helpCoExp"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
+                        <a data-toggle="modal" data-target="#helpCoExp"><i class="fa fa-question-circle-o animated rollIn" aria-hidden="true"></i></a>
                         <label>How many years have you been in this line of work?</label>
                         <br>
                         <select id="App_Ctrl_288" style="WIDTH: 75px" class="form-control">
@@ -402,7 +403,7 @@
                     </div>
 
                     <div class="form-group self-emp">
-                        <a data-toggle="modal" data-target="#helpCoExp"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
+                        <a data-toggle="modal" data-target="#helpCoExp"><i class="fa fa-question-circle-o animated rollIn" aria-hidden="true"></i></a>
                         <label>How many years have you been in this line of work?</label>
                         <br>
                         <select id="App_Ctrl_294" style="WIDTH: 75px" class="form-control">
@@ -463,7 +464,7 @@
                     </div>
                 </form>
                 <div class="col-xs-12 head-btn loan-footer text-right">
-                    <a href="BorrowerEmployment.html">
+                    <a href="BorroweremploymentCo.html">
                         <i class="fa fa-backward hidden-md hidden-lg" aria-hidden="true"></i>
                         <button class="hidden-xs hidden-sm">Previous</button>
                     </a>
@@ -577,24 +578,11 @@
             </div>
         </div>
     </div>
-
+    <script src="scripts/functions.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-    <script>
-        function employment() {
-            if (document.getElementById("App_Ctrl_282_rdo_1").checked) {
-                $(".self-emp").css("display", "block");
-                $(".emp").css("display", "none");
-            } else if (document.getElementById("App_Ctrl_282_rdo_2").checked) {
-                $(".self-emp").css("display", "none");
-                $(".emp").css("display", "block");
-            } else {
-                console.log("Nothing");
-            }
-        }
 
-    </script>
 
 </body>
 

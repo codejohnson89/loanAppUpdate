@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="https://use.fontawesome.com/d11c41d7e5.js"></script>
-    <link rel="stylesheet" href="LoanAppStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="/loanAppUpdate/LoanAppStyle.css">
 
     <title>Loan Purpose</title>
 
@@ -84,7 +85,7 @@
                     </div>
                 </div>
                 <form>
-                    <div class="form-group"><a data-toggle="modal" data-target="#"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
+                    <div class="form-group"><a data-toggle="modal" data-target="#"><i class="fa fa-question-circle-o animated rollIn" aria-hidden="true"></i></a>
                         <p>Which best describes the purpose of this loan?</p>
                         <br>
                         <input type="radio" class="form-control radio-btn" name="App_Ctrl_35_rdo" id="App_Ctrl_35_rdo_1" value="363" onclick="loanPurp()">
@@ -115,7 +116,7 @@
                         <input type="text" class="form-control" id="App_Ctrl_460">
                     </div>
 
-                    <div class="form-group section1"><a data-toggle="modal" data-target="#"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
+                    <div class="form-group section1"><a data-toggle="modal" data-target="#"><i class="fa fa-question-circle-o animated rollIn" aria-hidden="true"></i></a>
                         <p>Property will be?</p>
                         <br>
                         <input type="radio" class="form-control radio-btn" name="App_Ctrl_37_rdo" id="App_Ctrl_35_rdo_1" value="371">
@@ -131,7 +132,7 @@
 
 
                     <div class="form-group section2">
-                        <a data-toggle="modal" data-target="#helpCoWork"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
+                        <a data-toggle="modal" data-target="#helpCoWork"><i class="fa fa-question-circle-o animated rollIn" aria-hidden="true"></i></a>
                         <p>Are you working with a real estate agent?</p>
                         <br>
                         <label>Name of agent</label>
@@ -182,26 +183,11 @@
         </div>
     </div>
 
-
+    <script src="/loanAppUpdate/scripts/functions.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-    <script>
-        function loanPurp() {
-            if (document.getElementById("App_Ctrl_35_rdo_3").checked || document.getElementById("App_Ctrl_35_rdo_7").checked) {
-                $(".section1").css("display", "none");
-                $(".section2").css("display", "none");
-            } else if (document.getElementById("App_Ctrl_35_rdo_5").checked || document.getElementById("App_Ctrl_35_rdo_6").checked) {
-                $(".section2").css("display", "none");
-                $(".section1").css("display", "block");
-            } else {
-                console.log("hello");
 
-                $(".section2").css("display", "block");
-            }
-        }
-
-    </script>
 
 </body>
 
