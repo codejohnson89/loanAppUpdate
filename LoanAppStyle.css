@@ -65,6 +65,9 @@ button {
 .self-emp {
     display: none;
 }
+.fa {
+    font-size: 24px;
+}
 
 /*********************Modal Styling********************************************************/
 
@@ -86,3 +89,16 @@ button {
 }
 
 /********************************************ALL MEDIA QUERIES***************************************/
+
+@media (max-width: 767px) {
+    .col-xs-4 {
+        font-size: 8px;
+    }
+    .head-btn a .fa {
+        font-size: 16px;
+        margin: auto 1px;
+    }
+    button {
+        margin: 10px auto;
+    }
+}
