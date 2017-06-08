@@ -7,7 +7,7 @@
     <link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="https://use.fontawesome.com/d11c41d7e5.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="/loanAppUpdate/LoanAppStyle.css">
+    <link rel="stylesheet" href="../LoanAppStyle.css">
 
     <title>Loan App Frame</title>
 
@@ -31,20 +31,40 @@
                 <img class="img-responsive img-circle stf-profile hidden-xs" src="http://shackmanlab.org/wp-content/uploads/2013/07/person-placeholder.jpg" width="200">
                 <div class="col-xs-12">
                     <button class="btn btn-defualt btn-main">Borrowers</button>
-                    <ul class="btn-list">
-                        <p>ddd</p>
-                        <li>Borrower Information</li>
-
-                        <li>Co-Borrower Information</li>
-                        <li>Current Address</li>
-                        <li>Co-Borrower Address</li>
-                        <li>Borrower Employment</li>
-                        <li>Co-Borrower Employment</li>
+                    <ul>
+                        <a href="Borrowers/LoanAppBorrowerInfo.html">
+                            <li>Borrower Information</li>
+                        </a>
+                        <a href="Borrowers/LoanAppCoBorrowerInfo.html">
+                            <li>Co-Borrower Information</li>
+                        </a>
+                        <a href="Borrowers/CurrentAddress.html">
+                            <li>Current Address</li>
+                        </a>
+                        <a href="Borrowers/Co-CurrentAddress.html">
+                            <li>Co-Borrower Address</li>
+                        </a>
+                        <a href="Borrowers/BorrowerEmployment.html">
+                            <li>Borrower Employment</li>
+                        </a>
+                        <a href="Borrowers/CoBorrowerEmployment.html">
+                            <li>Co-Borrower Employment</li>
+                        </a>
                     </ul>
                     <button class="btn btn-defualt btn-main">Property</button>
-                    <ul class="btn-list">
-                        <li>Loan Purpose</li>
-                        <li>Loan Information</li>
+                    <ul>
+                        <a href="Property/LoanPurpose.html">
+                            <li>Loan Purpose</li>
+                        </a>
+                        <a href="Property/PropertyLocation.html">
+                            <li>Property Location</li>
+                        </a>
+                        <a href="Property/ConstructionLocation.html">
+                            <li>Contruction Location</li>
+                        </a>
+                        <a href="Property/LoanInfo.html">
+                            <li>Loan Information</li>
+                        </a>
                     </ul>
                     <button class="btn btn-defualt btn-main">Finances</button>
                     <ul class="btn-list">
@@ -60,7 +80,7 @@
                     <button class="btn btn-defualt btn-main">Disclosures</button>
                     <ul class="btn-list">
                         <li>Declarations</li>
-                        <li>HxsA</li>
+                        <li>HMDA</li>
                         <li>Finish</li>
                     </ul>
                 </div>
@@ -96,64 +116,66 @@
                 <form>
 
                     <div class="form-group">
-                        <a data-toggle="modal" data-target="#helpCoWork"><i class="fa fa-question-circle-o animated rollIn" aria-hidden="true"></i></a>
+                        <a data-toggle="modal" data-target="#helpMortType"><i class="fa fa-question-circle-o animated rollIn" aria-hidden="true"></i></a>
                         <p>What type of mortgage are you applying for?</p>
                         <br>
-                        <input type="radio" class="form-control radio-btn" id="" value="">
+                        <input type="radio" class="form-control radio-btn" id="App_Ctrl_65_rdo_1" name="App_Ctrl_65_rdo" value="377">
                         <label>VA</label>
                         <br>
-                        <input type="radio" class="form-control radio-btn" id="" value="">
+                        <input type="radio" class="form-control radio-btn" id="App_Ctrl_65_rdo_2" name="App_Ctrl_65_rdo" value="378">
                         <label>FHA</label>
                         <br>
-                        <input type="radio" class="form-control radio-btn" id="" value="">
+                        <input type="radio" class="form-control radio-btn" id="App_Ctrl_65_rdo_3" name="App_Ctrl_65_rdo" value="379">
                         <label>Conventional</label>
                         <br>
-                        <input type="radio" class="form-control radio-btn" id="" value="">
+                        <input type="radio" class="form-control radio-btn" id="App_Ctrl_65_rdo_4" name="App_Ctrl_65_rdo" value="380">
                         <label>USDA/Rural Housing Service</label>
 
                     </div>
                     <div class="form-group">
-                        <a data-toggle="modal" data-target="#helpCoWork"><i class="fa fa-question-circle-o animated rollIn animated rollIn" aria-hidden="true"></i></a>
+                        <a data-toggle="modal" data-target="#helpAgentCase"><i class="fa fa-question-circle-o animated rollIn animated rollIn" aria-hidden="true"></i></a>
                         <label>Agency Case Number</label>
-                        <input type="text" class="form-control" id="">
+                        <input type="text" class="form-control" id="App_Ctrl_66">
                     </div>
                     <div class="form-group">
-                        <a data-toggle="modal" data-target="#helpCoWork"><i class="fa fa-question-circle-o animated rollIn animated rollIn" aria-hidden="true"></i></a>
+                        <a data-toggle="modal" data-target="#helpLenderCase"><i class="fa fa-question-circle-o animated rollIn animated rollIn" aria-hidden="true"></i></a>
                         <label>Lender Case Number</label>
-                        <input type="text" class="form-control" id="">
+                        <input type="text" class="form-control" id="App_Ctrl_67">
                     </div>
                     <div class="form-group">
-                        <a data-toggle="modal" data-target="#helpCoWork"><i class="fa fa-question-circle-o animated rollIn animated rollIn" aria-hidden="true"></i></a>
+                        <a data-toggle="modal" data-target="#helpAmt"><i class="fa fa-question-circle-o animated rollIn animated rollIn" aria-hidden="true"></i></a>
                         <label>Amount</label>
-                        <input type="text" class="form-control" id="">
+                        <input type="text" class="form-control" id="App_Ctrl_68">
                     </div>
                     <div class="form-group">
-                        <a data-toggle="modal" data-target="#helpCoWork"><i class="fa fa-question-circle-o animated rollIn animated rollIn" aria-hidden="true"></i></a>
+                        <a data-toggle="modal" data-target="#helpIntRate"><i class="fa fa-question-circle-o animated rollIn animated rollIn" aria-hidden="true"></i></a>
                         <label>Interest Rate</label>
-                        <input type="text" class="form-control" id="">
+                        <input type="text" class="form-control" id="App_Ctrl_69">
                     </div>
                     <div class="form-group">
-                        <a data-toggle="modal" data-target="#helpCoWork"><i class="fa fa-question-circle-o animated rollIn animated rollIn" aria-hidden="true"></i></a>
+                        <a data-toggle="modal" data-target="#helpTerm"><i class="fa fa-question-circle-o animated rollIn animated rollIn" aria-hidden="true"></i></a>
                         <label>Term / Due</label>
-                        <input type="text" class="form-control" id="">
+                        <br>
+                        <input type="text" class="form-control" id="App_Ctrl_70" style="width:150px; display: inline">
+                        <input type="text" class="form-control" id="App_Ctrl_71" style="width:150px; display: inline">
                     </div>
                     <div class="form-group">
-                        <a data-toggle="modal" data-target="#helpCoWork"><i class="fa fa-question-circle-o animated rollIn" aria-hidden="true"></i></a>
+                        <a data-toggle="modal" data-target="#helpAmortType"><i class="fa fa-question-circle-o animated rollIn" aria-hidden="true"></i></a>
                         <p>Amortization Type &#42;&#42;</p>
                         <br>
-                        <input type="radio" class="form-control radio-btn" id="" value="">
+                        <input type="radio" class="form-control radio-btn" id="App_Ctrl_72_rdo_1" name="App_Ctrl_72_rdo" value="381">
                         <label>Fixed Rate</label>
                         <br>
-                        <input type="radio" class="form-control radio-btn" id="" value="">
+                        <input type="radio" class="form-control radio-btn" id="App_Ctrl_72_rdo_2" name="App_Ctrl_72_rdo" value="382">
                         <label>GPM</label>
                         <br>
-                        <input type="radio" class="form-control radio-btn" id="" value="">
+                        <input type="radio" class="form-control radio-btn" id="App_Ctrl_72_rdo_3" name="App_Ctrl_72_rdo" value="383">
                         <label>ARM</label>
-                        <input type="text" class="form-control" id="">
+                        <input type="text" class="form-control" id="App_Ctrl_73" name="App_Ctrl_72_rdo_3">
                         <br>
-                        <input type="radio" class="form-control radio-btn" id="" value="">
+                        <input type="radio" class="form-control radio-btn" id="App_Ctrl_72_rdo_4" name="App_Ctrl_72_rdo" value="385">
                         <label>Other</label>
-                        <input type="text" class="form-control" id="">
+                        <input type="text" class="form-control" id="App_Ctrl_74" name="App_Ctrl_72_rdo_4">
 
                     </div>
                     <p>&#42;&#42;If you are considering an alternative type mortgage such as an ARM, GPM or Interest Only type mortgage that features a variable rate, click the links below to download and read important information about these programs:
@@ -181,18 +203,114 @@
             </div>
         </div>
         <!------The link for the icon for the clickable modal popups----------------------------->
-        <a data-toggle="modal" data-target="#helpCoWork"><i class="fa fa-question-circle-o animated rollIn" aria-hidden="true"></i></a>
 
 
-        <div id="" class="modal fade" role="dialog">
+
+        <div id="helpMortType" class="modal fade" role="dialog">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title">Online Help</h5>
                     </div>
                     <div class="modal-body">
-                        <h6></h6>
-                        <p></p>
+                        <h6>What type of mortgage are you applying for?</h6>
+                        <p>Select the type of mortgage you will be applying for. VA Loans are guaranteed by the US Department of Veterans Affairs (VA). They are made to honorably discharged veterans or their un-remarried windows or widowers. Such loans require a minimal or no down payment and offer lower interest rates. FHA Loans are insured by the Federal Housing Administration open to all qualified home purchasers. While there are limits to the size of FHA loans, they are generous enough to handle moderate-priced homes almost anywhere in the country. Conventional Loans are not part of any government housing program. They are free of any restrictions of government insured housing programs such as loan size limits. USDA/Rural Housing Service has various programs available to aid low to moderate income rural residents to purchase, and construct housing.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="helpAgentCase" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Online Help</h5>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Agency Case Number</h6>
+                        <p>This number is used by the FHA or VA to identify a loan. It will typically be entered by your loan officer.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="helpLenderCase" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Online Help</h5>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Lender Case Number</h6>
+                        <p>This field is used by the lender to identify a loan. It will typically be entered by your loan officer.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="helpAmt" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Online Help</h5>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Amount</h6>
+                        <p>What is the amount of the loan you will need to purchase or refinance?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="helpIntRate" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Online Help</h5>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Interest Rate</h6>
+                        <p>What interest rate are you looking to get for this loan?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="helpTerm" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Online Help</h5>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Term/Due Number of Months</h6>
+                        <p>These two fields are for indicating the term and amortization of your loan. The first box for the term in months that the amortization of your loan will be calculated for. The second box is for the number of months in which the loan will come due. For a 30 year fixed, the term will be 360 and the months due will also be 360. Other loan types may be amortized for 30 years but come due sooner with a balloon payment.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="helpAmortType" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Online Help</h5>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Amortization Type</h6>
+                        <p>Choose the type of loan program you are interested in. If you are interested in an ARM, please specify the type you are interested in such as 3/1, 5/1 or 7/1. If you are interested in some other loan type, please specify. Fixed Rate Mortgages have interest rates and payments that do not change during the entire term of the loan. An Adjustable Rate Mortgage (ARM) has an interest rate and payment that change periodically over the life of the loan based on changes in a specific financial index. A Graduated Payment Mortgage (GPM) has payments that are scheduled to increase, usually annually, for a set number of years, and then level off. GPM can be used with either a fixed or adjustable interest rate, and usually has a 30-year term.</p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

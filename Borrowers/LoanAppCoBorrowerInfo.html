@@ -7,7 +7,7 @@
     <link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="https://use.fontawesome.com/d11c41d7e5.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="/loanAppUpdate/LoanAppStyle.css">
+    <link rel="stylesheet" href="../LoanAppStyle.css">
 
     <title>Minimum Bootstrap HTML Skeleton</title>
 
@@ -28,18 +28,40 @@
                 <img class="img-responsive img-circle stf-profile hidden-xs" src="http://shackmanlab.org/wp-content/uploads/2013/07/person-placeholder.jpg" width="200">
                 <div class="col-xs-12">
                     <button class="btn btn-defualt btn-main">Borrowers</button>
-                    <ul class="btn-list">
-                        <li>Borrower Information</li>
-                        <li>Co-Borrower Information</li>
-                        <li>Current Address</li>
-                        <li>Co-Borrower Address</li>
-                        <li>Borrower Employment</li>
-                        <li>Co-Borrower Employment</li>
+                    <ul>
+                        <a href="Borrowers/LoanAppBorrowerInfo.html">
+                            <li>Borrower Information</li>
+                        </a>
+                        <a href="Borrowers/LoanAppCoBorrowerInfo.html">
+                            <li>Co-Borrower Information</li>
+                        </a>
+                        <a href="Borrowers/CurrentAddress.html">
+                            <li>Current Address</li>
+                        </a>
+                        <a href="Borrowers/Co-CurrentAddress.html">
+                            <li>Co-Borrower Address</li>
+                        </a>
+                        <a href="Borrowers/BorrowerEmployment.html">
+                            <li>Borrower Employment</li>
+                        </a>
+                        <a href="Borrowers/CoBorrowerEmployment.html">
+                            <li>Co-Borrower Employment</li>
+                        </a>
                     </ul>
                     <button class="btn btn-defualt btn-main">Property</button>
-                    <ul class="btn-list">
-                        <li>Loan Purpose</li>
-                        <li>Loan Information</li>
+                    <ul>
+                        <a href="Property/LoanPurpose.html">
+                            <li>Loan Purpose</li>
+                        </a>
+                        <a href="Property/PropertyLocation.html">
+                            <li>Property Location</li>
+                        </a>
+                        <a href="Property/ConstructionLocation.html">
+                            <li>Contruction Location</li>
+                        </a>
+                        <a href="Property/LoanInfo.html">
+                            <li>Loan Information</li>
+                        </a>
                     </ul>
                     <button class="btn btn-defualt btn-main">Finances</button>
                     <ul class="btn-list">
@@ -62,13 +84,18 @@
             </div>
             <div class="col-sm-8 col-xs-12 loan-form">
                 <div class="col-xs-12 header">
-                    <div class="col-xs-6">
+                    <div class="col-sm-6 col-xs-4">
                         <label id="lblStaff">Staff Name Placeholder</label>
                         <br>
                         <label id="lblStaffPhone">866-300-1550</label>
                     </div>
-                    <div class="col-xs-6 head-btn">
-                        <a href="LoanAppBorrowerInfo.html">
+                    <div class="col-xs-4 visible-xs text-center">
+                        <a data-toggle="modal" data-target="#helpMenu">
+                            <button style="width: 5em">Menu</button>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-xs-4 head-btn">
+                        <a href="BorrowerEmployment.html">
                             <i class="fa fa-backward hidden-md hidden-lg" aria-hidden="true"></i>
                             <button class="hidden-xs hidden-sm">Previous</button>
                         </a>
@@ -76,7 +103,7 @@
                             <i class="fa fa-floppy-o hidden-md hidden-lg" aria-hidden="true"></i>
                             <button class="hidden-xs hidden-sm">Save</button>
                         </a>
-                        <a href="CurrentAddress.html">
+                        <a href="#">
                             <i class="fa fa-forward hidden-md hidden-lg" aria-hidden="true"></i>
                             <button class="hidden-xs hidden-sm">Next</button>
                         </a>
@@ -494,6 +521,74 @@
                     <div class="modal-body">
                         <h6>Relationship to Primary Borrower</h6>
                         <p>Select the option from the list that best describes your relationship to the primary borrower.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="helpMenu" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Loan App Menu</h5>
+                    </div>
+                    <div class="modal-body">
+
+                        <button class="btn btn-defualt btn-main">Borrowers</button>
+                        <ul>
+                            <a href="Borrowers/LoanAppBorrowerInfo.html">
+                                <li>Borrower Information</li>
+                            </a>
+                            <a href="Borrowers/LoanAppCoBorrowerInfo.html">
+                                <li>Co-Borrower Information</li>
+                            </a>
+                            <a href="Borrowers/CurrentAddress.html">
+                                <li>Current Address</li>
+                            </a>
+                            <a href="Borrowers/Co-CurrentAddress.html">
+                                <li>Co-Borrower Address</li>
+                            </a>
+                            <a href="Borrowers/BorrowerEmployment.html">
+                                <li>Borrower Employment</li>
+                            </a>
+                            <a href="Borrowers/CoBorrowerEmployment.html">
+                                <li>Co-Borrower Employment</li>
+                            </a>
+                        </ul>
+                        <button class="btn btn-defualt btn-main">Property</button>
+                        <ul>
+                            <a href="Property/LoanPurpose.html">
+                                <li>Loan Purpose</li>
+                            </a>
+                            <a href="Property/PropertyLocation.html">
+                                <li>Property Location</li>
+                            </a>
+                            <a href="Property/ConstructionLocation.html">
+                                <li>Contruction Location</li>
+                            </a>
+                            <a href="Property/LoanInfo.html">
+                                <li>Loan Information</li>
+                            </a>
+                        </ul>
+                        <button class="btn btn-defualt btn-main">Finances</button>
+                        <ul class="btn-list">
+                            <li>Joint Statement of Assets and Liabilities</li>
+                            <li>Borrower Income</li>
+                            <li>Co-Borrower Income</li>
+                            <li>Borrower-Combined Housing</li>
+                            <li>Borrower Real Estate Owned</li>
+                            <li>Borrower Liquid Assets</li>
+                            <li>Borrower Other Assets</li>
+                            <li>Borrower Liabilities</li>
+                        </ul>
+                        <button class="btn btn-defualt btn-main">Disclosures</button>
+                        <ul class="btn-list">
+                            <li>Declarations</li>
+                            <li>HxsA</li>
+                            <li>Finish</li>
+                        </ul>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
