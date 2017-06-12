@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="https://use.fontawesome.com/d11c41d7e5.js"></script>
-    <link rel="stylesheet" href="LoanAppStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="../LoanAppStyle.css">
 
     <title>Loan Purpose</title>
 
@@ -28,18 +29,40 @@
                 <img class="img-responsive img-circle stf-profile hidden-xs" src="http://shackmanlab.org/wp-content/uploads/2013/07/person-placeholder.jpg" width="200">
                 <div class="col-xs-12">
                     <button class="btn btn-defualt btn-main">Borrowers</button>
-                    <ul class="btn-list">
-                        <li>Borrower Information</li>
-                        <li>Co-Borrower Information</li>
-                        <li>Current Address</li>
-                        <li>Co-Borrower Address</li>
-                        <li>Borrower Employment</li>
-                        <li>Co-Borrower Employment</li>
+                    <ul>
+                        <a href="../Borrowers/LoanAppBorrowerInfo.html">
+                            <li>Borrower Information</li>
+                        </a>
+                        <a href="../Borrowers/LoanAppCoBorrowerInfo.html">
+                            <li>Co-Borrower Information</li>
+                        </a>
+                        <a href="../Borrowers/CurrentAddress.html">
+                            <li>Current Address</li>
+                        </a>
+                        <a href="../Borrowers/Co-CurrentAddress.html">
+                            <li>Co-Borrower Address</li>
+                        </a>
+                        <a href="../Borrowers/BorrowerEmployment.html">
+                            <li>Borrower Employment</li>
+                        </a>
+                        <a href="../Borrowers/CoBorrowerEmployment.html">
+                            <li>Co-Borrower Employment</li>
+                        </a>
                     </ul>
                     <button class="btn btn-defualt btn-main">Property</button>
-                    <ul class="btn-list">
-                        <li>Loan Purpose</li>
-                        <li>Loan Information</li>
+                    <ul>
+                        <a href="LoanPurpose.html">
+                            <li>Loan Purpose</li>
+                        </a>
+                        <a href="PropertyLocation.html">
+                            <li>Property Location</li>
+                        </a>
+                        <a href="ConstructionLocation.html">
+                            <li>Contruction Location</li>
+                        </a>
+                        <a href="LoanInfo.html">
+                            <li>Loan Information</li>
+                        </a>
                     </ul>
                     <button class="btn btn-defualt btn-main">Finances</button>
                     <ul class="btn-list">
@@ -55,20 +78,25 @@
                     <button class="btn btn-defualt btn-main">Disclosures</button>
                     <ul class="btn-list">
                         <li>Declarations</li>
-                        <li>HxsA</li>
+                        <li>HMDA</li>
                         <li>Finish</li>
                     </ul>
                 </div>
             </div>
             <div class="col-sm-8 col-xs-12 loan-form">
                 <div class="col-xs-12 header">
-                    <div class="col-xs-6">
+                    <div class="col-sm-6 col-xs-4">
                         <label id="lblStaff">Staff Name Placeholder</label>
                         <br>
                         <label id="lblStaffPhone">866-300-1550</label>
                     </div>
-                    <div class="col-xs-6 head-btn">
-                        <a href="BorrowerEmployment.html">
+                    <div class="col-xs-4 visible-xs text-center">
+                        <a data-toggle="modal" data-target="#helpMenu">
+                            <button style="width: 5em">Menu</button>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-xs-4 head-btn">
+                        <a href="PropertyLocation.html">
                             <i class="fa fa-backward hidden-md hidden-lg" aria-hidden="true"></i>
                             <button class="hidden-xs hidden-sm">Previous</button>
                         </a>
@@ -84,7 +112,7 @@
                     </div>
                 </div>
                 <form>
-                    <div class="form-group"><a data-toggle="modal" data-target="#"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
+                    <div class="form-group"><a data-toggle="modal" data-target="#"><i class="fa fa-question-circle-o animated rollIn" aria-hidden="true"></i></a>
                         <p>Which best describes the purpose of this loan?</p>
                         <br>
                         <input type="radio" class="form-control radio-btn" name="App_Ctrl_35_rdo" id="App_Ctrl_35_rdo_1" value="363" onclick="loanPurp()">
@@ -115,7 +143,7 @@
                         <input type="text" class="form-control" id="App_Ctrl_460">
                     </div>
 
-                    <div class="form-group section1"><a data-toggle="modal" data-target="#"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
+                    <div class="form-group section1"><a data-toggle="modal" data-target="#"><i class="fa fa-question-circle-o animated rollIn" aria-hidden="true"></i></a>
                         <p>Property will be?</p>
                         <br>
                         <input type="radio" class="form-control radio-btn" name="App_Ctrl_37_rdo" id="App_Ctrl_35_rdo_1" value="371">
@@ -131,7 +159,7 @@
 
 
                     <div class="form-group section2">
-                        <a data-toggle="modal" data-target="#helpCoWork"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
+                        <a data-toggle="modal" data-target="#helpCoWork"><i class="fa fa-question-circle-o animated rollIn" aria-hidden="true"></i></a>
                         <p>Are you working with a real estate agent?</p>
                         <br>
                         <label>Name of agent</label>
@@ -147,7 +175,7 @@
 
 
                     <div class="col-xs-12 head-btn loan-footer text-right">
-                        <a href="BorrowerEmployment.html">
+                        <a href="PropertyLocation.html">
                             <i class="fa fa-backward hidden-md hidden-lg" aria-hidden="true"></i>
                             <button class="hidden-xs hidden-sm">Previous</button>
                         </a>
@@ -180,28 +208,97 @@
                 </div>
             </div>
         </div>
+        <div id="" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Online Help</h5>
+                    </div>
+                    <div class="modal-body">
+                        <h6></h6>
+                        <p></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="helpMenu" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Loan App Menu</h5>
+                    </div>
+                    <div class="modal-body">
+
+                        <button class="btn btn-defualt btn-main">Borrowers</button>
+                        <ul>
+                            <a href="../Borrowers/LoanAppBorrowerInfo.html">
+                                <li>Borrower Information</li>
+                            </a>
+                            <a href="../Borrowers/LoanAppCoBorrowerInfo.html">
+                                <li>Co-Borrower Information</li>
+                            </a>
+                            <a href="../Borrowers/CurrentAddress.html">
+                                <li>Current Address</li>
+                            </a>
+                            <a href="../Borrowers/Co-CurrentAddress.html">
+                                <li>Co-Borrower Address</li>
+                            </a>
+                            <a href="../Borrowers/BorrowerEmployment.html">
+                                <li>Borrower Employment</li>
+                            </a>
+                            <a href="../Borrowers/CoBorrowerEmployment.html">
+                                <li>Co-Borrower Employment</li>
+                            </a>
+                        </ul>
+                        <button class="btn btn-defualt btn-main">Property</button>
+                        <ul>
+                            <a href="LoanPurpose.html">
+                                <li>Loan Purpose</li>
+                            </a>
+                            <a href="PropertyLocation.html">
+                                <li>Property Location</li>
+                            </a>
+                            <a href="ConstructionLocation.html">
+                                <li>Contruction Location</li>
+                            </a>
+                            <a href="LoanInfo.html">
+                                <li>Loan Information</li>
+                            </a>
+                        </ul>
+                        <button class="btn btn-defualt btn-main">Finances</button>
+                        <ul class="btn-list">
+                            <li>Joint Statement of Assets and Liabilities</li>
+                            <li>Borrower Income</li>
+                            <li>Co-Borrower Income</li>
+                            <li>Borrower-Combined Housing</li>
+                            <li>Borrower Real Estate Owned</li>
+                            <li>Borrower Liquid Assets</li>
+                            <li>Borrower Other Assets</li>
+                            <li>Borrower Liabilities</li>
+                        </ul>
+                        <button class="btn btn-defualt btn-main">Disclosures</button>
+                        <ul class="btn-list">
+                            <li>Declarations</li>
+                            <li>HxsA</li>
+                            <li>Finish</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-
+    <script src="../scripts/functions.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-    <script>
-        function loanPurp() {
-            if (document.getElementById("App_Ctrl_35_rdo_3").checked || document.getElementById("App_Ctrl_35_rdo_7").checked) {
-                $(".section1").css("display", "none");
-                $(".section2").css("display", "none");
-            } else if (document.getElementById("App_Ctrl_35_rdo_5").checked || document.getElementById("App_Ctrl_35_rdo_6").checked) {
-                $(".section2").css("display", "none");
-                $(".section1").css("display", "block");
-            } else {
-                console.log("hello");
 
-                $(".section2").css("display", "block");
-            }
-        }
-
-    </script>
 
 </body>
 

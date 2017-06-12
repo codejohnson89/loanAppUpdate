@@ -68,6 +68,29 @@ button {
 .fa {
     font-size: 24px;
 }
+.existingFinance {
+    display: none;
+}
+.loan-form {
+    border: 1px solid #cdcdcd;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: -1px 1px 25px #333;
+    margin-top: 20px
+}
+.stf-profile {
+    margin: 20px auto;
+}
+.header {
+    margin: 30px auto;
+    border: 1px solid #cdcdcd;
+    border-radius: 15px;
+    box-shadow: 1px 0px 5px #333;
+}
+.next {
+    float: right;
+    margin: 15px 5px;
+}
 
 /*********************Modal Styling********************************************************/
 
@@ -101,4 +124,17 @@ button {
     button {
         margin: 10px auto;
     }
+}
+
+/***************************************LOGIN PAGE ONLY****************************/
+
+.login-form {
+    margin: 20em auto;
+    padding: 35px;
+    box-shadow: 5px 10px 30px #333;
+    border: 1px solid #333;
+    border-radius: 15px;
+}
+.instructions {
+    margin-bottom: 55px;
 }
