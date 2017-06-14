@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://use.fontawesome.com/d11c41d7e5.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="../LoanAppStyle.css">
+
+    <title>Loan App Frame</title>
+
+    <!--  -->
+
+    <style>
+        .fa {
+            font-size: 24px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-4 hidden-xs section-info">
+                <img class="img-responsive img-circle stf-profile hidden-xs" src="http://shackmanlab.org/wp-content/uploads/2013/07/person-placeholder.jpg" width="200">
+                <div class="col-xs-12">
+                    <button class="btn btn-defualt btn-main">Borrowers</button>
+                    <ul>
+                        <a href="Borrowers/LoanAppBorrowerInfo.html">
+                            <li>Borrower Information</li>
+                        </a>
+                        <a href="Borrowers/LoanAppCoBorrowerInfo.html">
+                            <li>Co-Borrower Information</li>
+                        </a>
+                        <a href="Borrowers/CurrentAddress.html">
+                            <li>Current Address</li>
+                        </a>
+                        <a href="Borrowers/Co-CurrentAddress.html">
+                            <li>Co-Borrower Address</li>
+                        </a>
+                        <a href="Borrowers/BorrowerEmployment.html">
+                            <li>Borrower Employment</li>
+                        </a>
+                        <a href="Borrowers/CoBorrowerEmployment.html">
+                            <li>Co-Borrower Employment</li>
+                        </a>
+                    </ul>
+                    <button class="btn btn-defualt btn-main">Property</button>
+                    <ul>
+                        <a href="Property/LoanPurpose.html">
+                            <li>Loan Purpose</li>
+                        </a>
+                        <a href="Property/PropertyLocation.html">
+                            <li>Property Location</li>
+                        </a>
+                        <a href="Property/ConstructionLocation.html">
+                            <li>Contruction Location</li>
+                        </a>
+                        <a href="Property/LoanInfo.html">
+                            <li>Loan Information</li>
+                        </a>
+                    </ul>
+                    <button class="btn btn-defualt btn-main">Finances</button>
+                    <ul class="btn-list">
+                        <li>Joint Statement of Assets and Liabilities</li>
+                        <li>Borrower Income</li>
+                        <li>Co-Borrower Income</li>
+                        <li>Borrower-Combined Housing</li>
+                        <li>Borrower Real Estate Owned</li>
+                        <li>Borrower Liquid Assets</li>
+                        <li>Borrower Other Assets</li>
+                        <li>Borrower Liabilities</li>
+                    </ul>
+                    <button class="btn btn-defualt btn-main">Disclosures</button>
+                    <ul class="btn-list">
+                        <li>Declarations</li>
+                        <li>HMDA</li>
+                        <li>Finish</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-8 col-xs-12 loan-form">
+                <div class="col-xs-12 header">
+                    <div class="col-sm-6 col-xs-4">
+                        <label id="lblStaff">Staff Name Placeholder</label>
+                        <br>
+                        <label id="lblStaffPhone">866-300-1550</label>
+                    </div>
+                    <div class="col-xs-4 visible-xs text-center">
+                        <a data-toggle="modal" data-target="#helpMenu">
+                            <button style="width: 5em">Menu</button>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-xs-4 head-btn">
+                        <a href="BorrowerEmployment.html">
+                            <i class="fa fa-backward hidden-md hidden-lg" aria-hidden="true"></i>
+                            <button class="hidden-xs hidden-sm">Previous</button>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-floppy-o hidden-md hidden-lg" aria-hidden="true"></i>
+                            <button class="hidden-xs hidden-sm">Save</button>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-forward hidden-md hidden-lg" aria-hidden="true"></i>
+                            <button class="hidden-xs hidden-sm">Next</button>
+                        </a>
+
+                    </div>
+                </div>
+                <form>
+                    <h3>Borrower Real Estate Owned</h3>
+                    <div class="form-group">
+                        <a data-toggle="modal" data-target="#status"><i class="fa fa-question-circle-o animated rollIn" aria-hidden="true"></i></a>
+                        <label>Status</label>
+                        <br>
+                        <select id="App_Ctrl_110">
+                            <option value="1"> </option>
+                            <option value="498">Pending Sale</option>
+                            <option value="499">Rental</option>
+                            <option value="500">Sold</option>
+                            <option value="501">Held As Primary Residence</option>
+                            <option value="502">Held As Secondary Residence</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <a data-toggle="modal" data-target="#address"><i class="fa fa-question-circle-o animated rollIn animated rollIn" aria-hidden="true"></i></a>
+                        <label>Address</label>
+                        <input type="text" class="form-control" id="App_Ctrl_111">
+                    </div>
+                    <div class="form-group">
+
+                        <label>City</label>
+                        <input type="text" class="form-control" id="App_Ctrl_112">
+                    </div>
+                    <div class="form-group">
+
+                        <label>State</label>
+                        <br>
+                        <select id="App_Ctrl_113">
+                            <option value="1"> </option>
+                            <option value="401">Alabama</option>
+                            <option value="402">Alaska</option>
+                            <option value="403">Arizona</option>
+                            <option value="404">Arkansas</option>
+                            <option value="405">California</option>
+                            <option value="406">Colorado</option>
+                            <option value="407">Connecticut</option>
+                            <option value="408">Delaware</option>
+                            <option value="13577">District of Columbia</option>
+                            <option value="409">Florida</option>
+                            <option value="410">Georgia</option>
+                            <option value="13567">Guam</option>
+                            <option value="411">Hawaii</option>
+                            <option value="412">Idaho</option>
+                            <option value="413">Illinois</option>
+                            <option value="414">Indiana</option>
+                            <option value="415">Iowa</option>
+                            <option value="416">Kansas</option>
+                            <option value="417">Kentucky</option>
+                            <option value="418">Louisiana</option>
+                            <option value="419">Maine</option>
+                            <option value="420">Maryland</option>
+                            <option value="421">Massachusetts</option>
+                            <option value="422">Michigan</option>
+                            <option value="423">Minnesota</option>
+                            <option value="424">Mississippi</option>
+                            <option value="425">Missouri</option>
+                            <option value="426">Montana</option>
+                            <option value="427">Nebraska</option>
+                            <option value="428">Nevada</option>
+                            <option value="429">New Hampshire</option>
+                            <option value="430">New Jersey</option>
+                            <option value="431">New Mexico</option>
+                            <option value="432">New York</option>
+                            <option value="433">North Carolina</option>
+                            <option value="434">North Dakota</option>
+                            <option value="435">Ohio</option>
+                            <option value="436">Oklahoma</option>
+                            <option value="437">Oregon</option>
+                            <option value="438">Pennsylvania</option>
+                            <option value="13566">Puerto Rico</option>
+                            <option value="439">Rhode Island</option>
+                            <option value="440">South Carolina</option>
+                            <option value="441">South Dakota</option>
+                            <option value="13568">St. Croix</option>
+                            <option value="13569">St. John</option>
+                            <option value="13570">St. Thomas</option>
+                            <option value="442">Tennessee</option>
+                            <option value="443">Texas</option>
+                            <option value="444">Utah</option>
+                            <option value="445">Vermont</option>
+                            <option value="446">Virginia</option>
+                            <option value="447">Washington</option>
+                            <option value="448">West Virginia</option>
+                            <option value="449">Wisconsin</option>
+                            <option value="450">Wyoming</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+
+                        <label>Zip Code</label>
+                        <input type="text" class="form-control" id="App_Ctrl_114">
+                    </div>
+                    <div class="form-group">
+                        <a data-toggle="modal" data-target="#pt"><i class="fa fa-question-circle-o animated rollIn" aria-hidden="true"></i></a>
+                        <label>Property Type</label>
+                        <br>
+                        <select id="App_Ctrl_115">
+                            <option value="1"> </option>
+                            <option value="13598">Single Family Residence</option>
+                            <option value="13599">Two to Fourplex</option>
+                            <option value="13600">Commercial Non-residential</option>
+                            <option value="13601">Commercial Residential</option>
+                            <option value="13602">Condomimium</option>
+                            <option value="13603">Co-Op</option>
+                            <option value="13604">Farm</option>
+                            <option value="13605">Land</option>
+                            <option value="13606">Mixed Use Property</option>
+                            <option value="13607">Mobile Home</option>
+                            <option value="13608">Multi-Family Property</option>
+                            <option value="13609">Townhome</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <a data-toggle="modal" data-target="#cv"><i class="fa fa-question-circle-o animated rollIn animated rollIn" aria-hidden="true"></i></a>
+                        <label>Current Value</label>
+                        <input type="text" class="form-control" id="App_Ctrl_116">
+                    </div>
+                    <div class="form-group">
+                        <a data-toggle="modal" data-target="#cmb"><i class="fa fa-question-circle-o animated rollIn animated rollIn" aria-hidden="true"></i></a>
+                        <label>Current Mortgage Balance</label>
+                        <input type="text" class="form-control" id="App_Ctrl_117">
+                    </div>
+                    <div class="form-group">
+                        <a data-toggle="modal" data-target="#mmp"><i class="fa fa-question-circle-o animated rollIn animated rollIn" aria-hidden="true"></i></a>
+                        <label>Monthly Mortgage Payments</label>
+                        <input type="text" class="form-control" id="App_Ctrl_118">
+                    </div>
+                    <div class="form-group">
+                        <a data-toggle="modal" data-target="#ati"><i class="fa fa-question-circle-o animated rollIn animated rollIn" aria-hidden="true"></i></a>
+                        <label>Annual Taxes and Insurance</label>
+                        <input type="text" class="form-control" id="App_Ctrl_119">
+                    </div>
+                    <div class="form-group">
+                        <a data-toggle="modal" data-target="#gmri"><i class="fa fa-question-circle-o animated rollIn animated rollIn" aria-hidden="true"></i></a>
+                        <label>If this is a rental property, what is the gross monthly rental income?</label>
+                        <input type="text" class="form-control" id="App_Ctrl_120">
+                    </div>
+
+                    <div class="form-group">
+
+                        <p>Do you own any other properties</p>
+                        <input type="radio" class="form-control radio-btn" id="App_Ctrl_121_rdo_1" name="App_Ctrl_121_rdo" value="37">
+                        <label>Yes</label>
+                        <input type="radio" class="form-control radio-btn" id="App_Ctrl_121_rdo_2" name="App_Ctrl_121_rdo" value="38">
+                        <label>No</label>
+
+                    </div>
+                    <div class="col-xs-12 head-btn loan-footer text-right">
+                        <a href="BorrowerEmployment.html">
+                            <i class="fa fa-backward hidden-md hidden-lg" aria-hidden="true"></i>
+                            <button class="hidden-xs hidden-sm">Previous</button>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-floppy-o hidden-md hidden-lg" aria-hidden="true"></i>
+                            <button class="hidden-xs hidden-sm">Save</button>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-forward hidden-md hidden-lg" aria-hidden="true"></i>
+                            <button class="hidden-xs hidden-sm">Next</button>
+                        </a>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!------The link for the icon for the clickable modal popups----------------------------->
+
+
+
+        <div id="status" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Online Help</h5>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Status</h6>
+                        <p>Select the following from the drop-down list: Choose "Sold" if the property is sold but still in your name; choose "Pending Sale" if the property is currently listed for sale with a real estate broker or you are selling it yourself; choose "Rental" if the property is being held for income purposes; or, choose held as primary or secondary residence if you intend to keep this property.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="address" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Online Help</h5>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Address</h6>
+                        <p>Enter the physical address of the property owned. If property owned is land with no street address, enter the number of lots or acres owned in the street field.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="pt" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Online Help</h5>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Property Type</h6>
+                        <p>Select the item in the dropdown list that best describes the property.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="cv" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Online Help</h5>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Current Value</h6>
+                        <p>Enter the present appraised value of the property. If a recent appraisal has not been done on the property, use a comparable property recently sold.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="cmb" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Online Help</h5>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Current Mortgage Balance</h6>
+                        <p>List the total amount of any remaining loans including first, second and third mortgages. If there are any other types of government or private liens include those amounts also. Example: if your current first mortgage balance is $200,000 and you have a second mortgage for home improvement with a balance of $50,000, you would enter 250000 in this field.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="mmp" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Online Help</h5>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Monthly Mortgage Payments</h6>
+                        <p>Enter the total monthly mortgage payments for the property. If the monthly payment includes an amount for property taxes and hazard insurance, be sure to include those in this amount.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="ati" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Online Help</h5>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Annual Taxes and Insurance</h6>
+                        <p>If your monthly mortgage payment for the property does not include property taxes and hazard insurance, enter the monthly amount of these plus any maintenance or other costs associated with the property. If needed, sum up the values for the entire year and divide by 12 to calculate the monthly amount.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="gmri" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Online Help</h5>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Gross Monthly Rental Income</h6>
+                        <p>Enter in the gross monthly income of the rental property. If this is not a rental property, leave this field blank.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="helpMenu" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Loan App Menu</h5>
+                    </div>
+                    <div class="modal-body">
+
+                        <button class="btn btn-defualt btn-main">Borrowers</button>
+                        <ul>
+                            <a href="Borrowers/LoanAppBorrowerInfo.html">
+                                <li>Borrower Information</li>
+                            </a>
+                            <a href="Borrowers/LoanAppCoBorrowerInfo.html">
+                                <li>Co-Borrower Information</li>
+                            </a>
+                            <a href="Borrowers/CurrentAddress.html">
+                                <li>Current Address</li>
+                            </a>
+                            <a href="Borrowers/Co-CurrentAddress.html">
+                                <li>Co-Borrower Address</li>
+                            </a>
+                            <a href="Borrowers/BorrowerEmployment.html">
+                                <li>Borrower Employment</li>
+                            </a>
+                            <a href="Borrowers/CoBorrowerEmployment.html">
+                                <li>Co-Borrower Employment</li>
+                            </a>
+                        </ul>
+                        <button class="btn btn-defualt btn-main">Property</button>
+                        <ul>
+                            <a href="Property/LoanPurpose.html">
+                                <li>Loan Purpose</li>
+                            </a>
+                            <a href="Property/PropertyLocation.html">
+                                <li>Property Location</li>
+                            </a>
+                            <a href="Property/ConstructionLocation.html">
+                                <li>Contruction Location</li>
+                            </a>
+                            <a href="Property/LoanInfo.html">
+                                <li>Loan Information</li>
+                            </a>
+                        </ul>
+                        <button class="btn btn-defualt btn-main">Finances</button>
+                        <ul class="btn-list">
+                            <li>Joint Statement of Assets and Liabilities</li>
+                            <li>Borrower Income</li>
+                            <li>Co-Borrower Income</li>
+                            <li>Borrower-Combined Housing</li>
+                            <li>Borrower Real Estate Owned</li>
+                            <li>Borrower Liquid Assets</li>
+                            <li>Borrower Other Assets</li>
+                            <li>Borrower Liabilities</li>
+                        </ul>
+                        <button class="btn btn-defualt btn-main">Disclosures</button>
+                        <ul class="btn-list">
+                            <li>Declarations</li>
+                            <li>HxsA</li>
+                            <li>Finish</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/functions.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script>
+
+
+    </script>
+
+</body>
+
+</html>
