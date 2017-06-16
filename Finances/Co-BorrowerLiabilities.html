@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://use.fontawesome.com/d11c41d7e5.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="../LoanAppStyle.css">
+
+    <title>Loan App Frame</title>
+
+    <!--  -->
+
+    <style>
+        .fa {
+            font-size: 24px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-4 hidden-xs section-info">
+                <img class="img-responsive img-circle stf-profile hidden-xs" src="http://shackmanlab.org/wp-content/uploads/2013/07/person-placeholder.jpg" width="200">
+                <div class="col-xs-12">
+                    <button class="btn btn-defualt btn-main">Borrowers</button>
+                    <ul>
+                        <a href="Borrowers/LoanAppBorrowerInfo.html">
+                            <li>Borrower Information</li>
+                        </a>
+                        <a href="Borrowers/LoanAppCoBorrowerInfo.html">
+                            <li>Co-Borrower Information</li>
+                        </a>
+                        <a href="Borrowers/CurrentAddress.html">
+                            <li>Current Address</li>
+                        </a>
+                        <a href="Borrowers/Co-CurrentAddress.html">
+                            <li>Co-Borrower Address</li>
+                        </a>
+                        <a href="Borrowers/BorrowerEmployment.html">
+                            <li>Borrower Employment</li>
+                        </a>
+                        <a href="Borrowers/CoBorrowerEmployment.html">
+                            <li>Co-Borrower Employment</li>
+                        </a>
+                    </ul>
+                    <button class="btn btn-defualt btn-main">Property</button>
+                    <ul>
+                        <a href="Property/LoanPurpose.html">
+                            <li>Loan Purpose</li>
+                        </a>
+                        <a href="Property/PropertyLocation.html">
+                            <li>Property Location</li>
+                        </a>
+                        <a href="Property/ConstructionLocation.html">
+                            <li>Contruction Location</li>
+                        </a>
+                        <a href="Property/LoanInfo.html">
+                            <li>Loan Information</li>
+                        </a>
+                    </ul>
+                    <button class="btn btn-defualt btn-main">Finances</button>
+                    <ul class="btn-list">
+                        <li>Joint Statement of Assets and Liabilities</li>
+                        <li>Borrower Income</li>
+                        <li>Co-Borrower Income</li>
+                        <li>Borrower-Combined Housing</li>
+                        <li>Borrower Real Estate Owned</li>
+                        <li>Borrower Liquid Assets</li>
+                        <li>Borrower Other Assets</li>
+                        <li>Borrower Liabilities</li>
+                    </ul>
+                    <button class="btn btn-defualt btn-main">Disclosures</button>
+                    <ul class="btn-list">
+                        <li>Declarations</li>
+                        <li>HMDA</li>
+                        <li>Finish</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-8 col-xs-12 loan-form">
+                <div class="col-xs-12 header">
+                    <div class="col-sm-6 col-xs-4">
+                        <label id="lblStaff">Staff Name Placeholder</label>
+                        <br>
+                        <label id="lblStaffPhone">866-300-1550</label>
+                    </div>
+                    <div class="col-xs-4 visible-xs text-center">
+                        <a data-toggle="modal" data-target="#helpMenu">
+                            <button style="width: 5em">Menu</button>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-xs-4 head-btn">
+                        <a href="BorrowerEmployment.html">
+                            <i class="fa fa-backward hidden-md hidden-lg" aria-hidden="true"></i>
+                            <button class="hidden-xs hidden-sm">Previous</button>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-floppy-o hidden-md hidden-lg" aria-hidden="true"></i>
+                            <button class="hidden-xs hidden-sm">Save</button>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-forward hidden-md hidden-lg" aria-hidden="true"></i>
+                            <button class="hidden-xs hidden-sm">Next</button>
+                        </a>
+
+                    </div>
+                </div>
+                <form>
+                    <h3>Co-Borrower Liabilities</h3>
+                    <div class="form-group">
+                        <a data-toggle="modal" data-target="#nc"><i class="fa fa-question-circle-o animated rollIn animated rollIn" aria-hidden="true"></i></a>
+                        <label>Name of Creditor</label>
+                        <input type="text" class="form-control" id="App_Ctrl_273">
+                    </div>
+                    <div class="form-group">
+                        <a data-toggle="modal" data-target="#address"><i class="fa fa-question-circle-o animated rollIn animated rollIn" aria-hidden="true"></i></a>
+                        <label>Address</label>
+                        <input type="text" class="form-control" id="App_Ctrl_274">
+                    </div>
+                    <div class="form-group">
+                        <label>City</label>
+                        <input type="text" class="form-control" id="App_Ctrl_275">
+                    </div>
+                    <div class="form-group">
+                        <label>State</label>
+                        <br>
+                        <select id="App_Ctrl_276" style="WIDTH: 315px" size="1">
+                            <option value="1"> </option>
+                            <option value="401">Alabama</option>
+                            <option value="402">Alaska</option>
+                            <option value="403">Arizona</option>
+                            <option value="404">Arkansas</option>
+                            <option value="405">California</option>
+                            <option value="406">Colorado</option>
+                            <option value="407">Connecticut</option>
+                            <option value="408">Delaware</option>
+                            <option value="13577">District of Columbia</option>
+                            <option value="409">Florida</option>
+                            <option value="410">Georgia</option>
+                            <option value="13567">Guam</option>
+                            <option value="411">Hawaii</option>
+                            <option value="412">Idaho</option>
+                            <option value="413">Illinois</option>
+                            <option value="414">Indiana</option>
+                            <option value="415">Iowa</option>
+                            <option value="416">Kansas</option>
+                            <option value="417">Kentucky</option>
+                            <option value="418">Louisiana</option>
+                            <option value="419">Maine</option>
+                            <option value="420">Maryland</option>
+                            <option value="421">Massachusetts</option>
+                            <option value="422">Michigan</option>
+                            <option value="423">Minnesota</option>
+                            <option value="424">Mississippi</option>
+                            <option value="425">Missouri</option>
+                            <option value="426">Montana</option>
+                            <option value="427">Nebraska</option>
+                            <option value="428">Nevada</option>
+                            <option value="429">New Hampshire</option>
+                            <option value="430">New Jersey</option>
+                            <option value="431">New Mexico</option>
+                            <option value="432">New York</option>
+                            <option value="433">North Carolina</option>
+                            <option value="434">North Dakota</option>
+                            <option value="435">Ohio</option>
+                            <option value="436">Oklahoma</option>
+                            <option value="437">Oregon</option>
+                            <option value="438">Pennsylvania</option>
+                            <option value="13566">Puerto Rico</option>
+                            <option value="439">Rhode Island</option>
+                            <option value="440">South Carolina</option>
+                            <option value="441">South Dakota</option>
+                            <option value="13568">St. Croix</option>
+                            <option value="13569">St. John</option>
+                            <option value="13570">St. Thomas</option>
+                            <option value="442">Tennessee</option>
+                            <option value="443">Texas</option>
+                            <option value="444">Utah</option>
+                            <option value="445">Vermont</option>
+                            <option value="446">Virginia</option>
+                            <option value="447">Washington</option>
+                            <option value="448">West Virginia</option>
+                            <option value="449">Wisconsin</option>
+                            <option value="450">Wyoming</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+
+                        <label>Zip Code</label>
+                        <input type="text" class="form-control" id="App_Ctrl_277">
+                    </div>
+                    <div class="form-group">
+                        <a data-toggle="modal" data-target="#an"><i class="fa fa-question-circle-o animated rollIn animated rollIn" aria-hidden="true"></i></a>
+                        <label>Account Number &#40;Last 4 digits only for credit cards&#41;</label>
+                        <input type="text" class="form-control" id="App_Ctrl_278">
+                    </div>
+                    <div class="form-group">
+                        <a data-toggle="modal" data-target="#tmp"><i class="fa fa-question-circle-o animated rollIn animated rollIn" aria-hidden="true"></i></a>
+                        <label>Type of Monthly Payment</label>
+                        <br>
+                        <select id="App_Ctrl_279" style="WIDTH: 315px" size="1">
+                            <option value="1"> </option>
+                            <option value="507">Child Care</option>
+                            <option value="508">Home Equity Line of Credit</option>
+                            <option value="509">Installment Loan</option>
+                            <option value="510">Liens</option>
+                            <option value="511">Mortgage</option>
+                            <option value="512">Open, 30 Day Charge</option>
+                            <option value="513">Other Expense</option>
+                            <option value="514">Other Liability</option>
+                            <option value="515">Revolving Charge</option>
+                            <option value="516">Separate Maintenance</option>
+                            <option value="517">Taxes</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <a data-toggle="modal" data-target="#mp"><i class="fa fa-question-circle-o animated rollIn animated rollIn" aria-hidden="true"></i></a>
+                        <label>Monthly Payment / Number of Months</label>
+                        <br>
+                        <input type="text" class="form-control" id="App_Ctrl_456" style="display: inline; width: 150px"> /
+                        <input type="text" class="form-control" id="App_Ctrl_457" style="display: inline; width: 150px">
+                    </div>
+                    <div class="form-group">
+                        <a data-toggle="modal" data-target="#balance"><i class="fa fa-question-circle-o animated rollIn animated rollIn" aria-hidden="true"></i></a>
+                        <label>Balance</label>
+                        <input type="text" class="form-control" id="App_Ctrl_280">
+                    </div>
+                    <div class="form-group">
+
+                        <p>Do you have any additional monthly payments?</p>
+                        <input type="radio" class="form-control radio-btn" id="App_Ctrl_281_rdo_1" name="App_Ctrl_281_rdo" value="37">
+                        <label>Yes</label>
+                        <input type="radio" class="form-control radio-btn" id="App_Ctrl_281_rdo_2" name="App_Ctrl_281_rdo " value="38">
+                        <label>No</label>
+
+                    </div>
+                    <div class="col-xs-12 head-btn loan-footer text-right">
+                        <a href="BorrowerEmployment.html">
+                            <i class="fa fa-backward hidden-md hidden-lg" aria-hidden="true"></i>
+                            <button class="hidden-xs hidden-sm">Previous</button>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-floppy-o hidden-md hidden-lg" aria-hidden="true"></i>
+                            <button class="hidden-xs hidden-sm">Save</button>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-forward hidden-md hidden-lg" aria-hidden="true"></i>
+                            <button class="hidden-xs hidden-sm">Next</button>
+                        </a>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!------The link for the icon for the clickable modal popups----------------------------->
+
+
+
+        <div id="nc" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Online Help</h5>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Name of Creditor</h6>
+                        <p>Enter the name of the company for which you have any outstanding debts. This could include automobile loans, revolving charge accounts, real estate loans, alimony, child support, stock pledges, etc. If your debt is with an individual rather than a company, enter that person's name.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="address" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Online Help</h5>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Address</h6>
+                        <p>Enter the mailing address of the company or individual you have the loan or credit with.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="an" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Online Help</h5>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Account Number</h6>
+                        <p>For credit cards, please enter the last 4 digits of your card number. For loans or other monthly installment accounts please provide the full account number.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="tmp" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Online Help</h5>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Type of Monthly Payment</h6>
+                        <p>Select an item from the drop-down menu that best describes the type of financial account.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="mp" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Online Help</h5>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Monthly Payments</h6>
+                        <p>Enter the monthly amount and the number of months remaining</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="balance" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Online Help</h5>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Balance</h6>
+                        <p>Enter the total remaining amount to be paid.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="helpMenu" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Loan App Menu</h5>
+                    </div>
+                    <div class="modal-body">
+
+                        <button class="btn btn-defualt btn-main">Borrowers</button>
+                        <ul>
+                            <a href="Borrowers/LoanAppBorrowerInfo.html">
+                                <li>Borrower Information</li>
+                            </a>
+                            <a href="Borrowers/LoanAppCoBorrowerInfo.html">
+                                <li>Co-Borrower Information</li>
+                            </a>
+                            <a href="Borrowers/CurrentAddress.html">
+                                <li>Current Address</li>
+                            </a>
+                            <a href="Borrowers/Co-CurrentAddress.html">
+                                <li>Co-Borrower Address</li>
+                            </a>
+                            <a href="Borrowers/BorrowerEmployment.html">
+                                <li>Borrower Employment</li>
+                            </a>
+                            <a href="Borrowers/CoBorrowerEmployment.html">
+                                <li>Co-Borrower Employment</li>
+                            </a>
+                        </ul>
+                        <button class="btn btn-defualt btn-main">Property</button>
+                        <ul>
+                            <a href="Property/LoanPurpose.html">
+                                <li>Loan Purpose</li>
+                            </a>
+                            <a href="Property/PropertyLocation.html">
+                                <li>Property Location</li>
+                            </a>
+                            <a href="Property/ConstructionLocation.html">
+                                <li>Contruction Location</li>
+                            </a>
+                            <a href="Property/LoanInfo.html">
+                                <li>Loan Information</li>
+                            </a>
+                        </ul>
+                        <button class="btn btn-defualt btn-main">Finances</button>
+                        <ul class="btn-list">
+                            <li>Joint Statement of Assets and Liabilities</li>
+                            <li>Borrower Income</li>
+                            <li>Co-Borrower Income</li>
+                            <li>Borrower-Combined Housing</li>
+                            <li>Borrower Real Estate Owned</li>
+                            <li>Borrower Liquid Assets</li>
+                            <li>Borrower Other Assets</li>
+                            <li>Borrower Liabilities</li>
+                        </ul>
+                        <button class="btn btn-defualt btn-main">Disclosures</button>
+                        <ul class="btn-list">
+                            <li>Declarations</li>
+                            <li>HxsA</li>
+                            <li>Finish</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/functions.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script>
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://use.fontawesome.com/d11c41d7e5.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="../LoanAppStyle.css">
+
+    <title>Loan App Frame</title>
+
+    <!--  -->
+
+    <style>
+        .fa {
+            font-size: 24px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-4 hidden-xs section-info">
+                <img class="img-responsive img-circle stf-profile hidden-xs" src="http://shackmanlab.org/wp-content/uploads/2013/07/person-placeholder.jpg" width="200">
+                <div class="col-xs-12">
+                    <button class="btn btn-defualt btn-main">Borrowers</button>
+                    <ul>
+                        <a href="Borrowers/LoanAppBorrowerInfo.html">
+                            <li>Borrower Information</li>
+                        </a>
+                        <a href="Borrowers/LoanAppCoBorrowerInfo.html">
+                            <li>Co-Borrower Information</li>
+                        </a>
+                        <a href="Borrowers/CurrentAddress.html">
+                            <li>Current Address</li>
+                        </a>
+                        <a href="Borrowers/Co-CurrentAddress.html">
+                            <li>Co-Borrower Address</li>
+                        </a>
+                        <a href="Borrowers/BorrowerEmployment.html">
+                            <li>Borrower Employment</li>
+                        </a>
+                        <a href="Borrowers/CoBorrowerEmployment.html">
+                            <li>Co-Borrower Employment</li>
+                        </a>
+                    </ul>
+                    <button class="btn btn-defualt btn-main">Property</button>
+                    <ul>
+                        <a href="Property/LoanPurpose.html">
+                            <li>Loan Purpose</li>
+                        </a>
+                        <a href="Property/PropertyLocation.html">
+                            <li>Property Location</li>
+                        </a>
+                        <a href="Property/ConstructionLocation.html">
+                            <li>Contruction Location</li>
+                        </a>
+                        <a href="Property/LoanInfo.html">
+                            <li>Loan Information</li>
+                        </a>
+                    </ul>
+                    <button class="btn btn-defualt btn-main">Finances</button>
+                    <ul class="btn-list">
+                        <li>Joint Statement of Assets and Liabilities</li>
+                        <li>Borrower Income</li>
+                        <li>Co-Borrower Income</li>
+                        <li>Borrower-Combined Housing</li>
+                        <li>Borrower Real Estate Owned</li>
+                        <li>Borrower Liquid Assets</li>
+                        <li>Borrower Other Assets</li>
+                        <li>Borrower Liabilities</li>
+                    </ul>
+                    <button class="btn btn-defualt btn-main">Disclosures</button>
+                    <ul class="btn-list">
+                        <li>Declarations</li>
+                        <li>HMDA</li>
+                        <li>Finish</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-8 col-xs-12 loan-form">
+                <div class="col-xs-12 header">
+                    <div class="col-sm-6 col-xs-4">
+                        <label id="lblStaff">Staff Name Placeholder</label>
+                        <br>
+                        <label id="lblStaffPhone">866-300-1550</label>
+                    </div>
+                    <div class="col-xs-4 visible-xs text-center">
+                        <a data-toggle="modal" data-target="#helpMenu">
+                            <button style="width: 5em">Menu</button>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-xs-4 head-btn">
+                        <a href="BorrowerEmployment.html">
+                            <i class="fa fa-backward hidden-md hidden-lg" aria-hidden="true"></i>
+                            <button class="hidden-xs hidden-sm">Previous</button>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-floppy-o hidden-md hidden-lg" aria-hidden="true"></i>
+                            <button class="hidden-xs hidden-sm">Save</button>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-forward hidden-md hidden-lg" aria-hidden="true"></i>
+                            <button class="hidden-xs hidden-sm">Next</button>
+                        </a>
+
+                    </div>
+                </div>
+                <form>
+                    <h3>Co-Borrower Income</h3>
+                    <div class="form-group">
+                        <a data-toggle="modal" data-target="#bmi"><i class="fa fa-question-circle-o animated rollIn animated rollIn" aria-hidden="true"></i></a>
+                        <label>Base Monthly Income</label>
+                        <input type="text" class="form-control" id="App_Ctrl_325">
+                    </div>
+                    <div class="form-group">
+                        <a data-toggle="modal" data-target="#mop"><i class="fa fa-question-circle-o animated rollIn animated rollIn" aria-hidden="true"></i></a>
+                        <label>Monthly Overtime Pay</label>
+                        <input type="text" class="form-control" id="App_Ctrl_326">
+                    </div>
+                    <div class="form-group">
+                        <a data-toggle="modal" data-target="#mbs"><i class="fa fa-question-circle-o animated rollIn animated rollIn" aria-hidden="true"></i></a>
+                        <label>Monthly Bonuses</label>
+                        <input type="text" class="form-control" id="App_Ctrl_327">
+                    </div>
+                    <div class="form-group">
+                        <a data-toggle="modal" data-target="#mcs"><i class="fa fa-question-circle-o animated rollIn animated rollIn" aria-hidden="true"></i></a>
+                        <label>Monthly Commissions</label>
+                        <input type="text" class="form-control" id="App_Ctrl_328">
+                    </div>
+                    <div class="form-group">
+                        <a data-toggle="modal" data-target="#mdii"><i class="fa fa-question-circle-o animated rollIn animated rollIn" aria-hidden="true"></i></a>
+                        <label>Monthly Dividends / Interest Income</label>
+                        <input type="text" class="form-control" id="App_Ctrl_329">
+                    </div>
+                    <div class="form-group">
+                        <a data-toggle="modal" data-target="#oi"><i class="fa fa-question-circle-o animated rollIn animated rollIn" aria-hidden="true"></i></a>
+                        <label>Other Income</label>
+                        <input type="text" class="form-control" id="App_Ctrl_330">
+                    </div>
+                    <div class="form-group">
+                        <a data-toggle="modal" data-target="#tmi"><i class="fa fa-question-circle-o animated rollIn animated rollIn" aria-hidden="true"></i></a>
+                        <label>Total Monthly Income</label>
+                        <input type="text" class="form-control" disabled="true" id="App_Ctrl_331">
+                    </div>
+                    <div class="form-group">
+                        <label>Description of Other Income</label>
+                        <input type="text" class="form-control" id="App_Ctrl_332">
+                    </div>
+
+                    <div class="col-xs-12 head-btn loan-footer text-right">
+                        <a href="BorrowerEmployment.html">
+                            <i class="fa fa-backward hidden-md hidden-lg" aria-hidden="true"></i>
+                            <button class="hidden-xs hidden-sm">Previous</button>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-floppy-o hidden-md hidden-lg" aria-hidden="true"></i>
+                            <button class="hidden-xs hidden-sm">Save</button>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-forward hidden-md hidden-lg" aria-hidden="true"></i>
+                            <button class="hidden-xs hidden-sm">Next</button>
+                        </a>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!------The link for the icon for the clickable modal popups----------------------------->
+
+
+
+        <div id="bmi" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Online Help</h5>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Base Monthly Income</h6>
+                        <p>Enter the gross monthly income of the borrower. This is the amount before any taxes, insurance, 401K or other deductions have been made. It may be wages or salaried income. If your base income varies from month to month, add up the total for the year and divide by 12.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="mop" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Online Help</h5>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Monthly Overtime Pay</h6>
+                        <p>Enter any overtime income you receive regularly. If your overtime varies from month to month, average it for a month.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="mbs" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Online Help</h5>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Monthly Bonuses</h6>
+                        <p>Enter any bonus income you receive regularly. If your bonus varies from month to month, average it for a month.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="mcs" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Online Help</h5>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Monthly Commissions</h6>
+                        <p>Enter any commission income you receive regularly. If your commission income varies, figure a monthly average by adding up one year from your 1099 form and dividing by 12.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="mdii" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Online Help</h5>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Monthly Dividends / Interest Income</h6>
+                        <p>Enter the average monthly dividend or interest income you receive on a regular basis. This income can be derived from stocks, bonds, savings interest, loans or other monthly receipts.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="oi" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Online Help</h5>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Other Income</h6>
+                        <p>Enter any additional monthly income you receive such as retirement, social security, child support, alimony or other income.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="tmi" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Online Help</h5>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Total Monthly Income</h6>
+                        <p>Income fields above will be summed up automatically to display the total monthly income.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="helpMenu" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Loan App Menu</h5>
+                    </div>
+                    <div class="modal-body">
+
+                        <button class="btn btn-defualt btn-main">Borrowers</button>
+                        <ul>
+                            <a href="Borrowers/LoanAppBorrowerInfo.html">
+                                <li>Borrower Information</li>
+                            </a>
+                            <a href="Borrowers/LoanAppCoBorrowerInfo.html">
+                                <li>Co-Borrower Information</li>
+                            </a>
+                            <a href="Borrowers/CurrentAddress.html">
+                                <li>Current Address</li>
+                            </a>
+                            <a href="Borrowers/Co-CurrentAddress.html">
+                                <li>Co-Borrower Address</li>
+                            </a>
+                            <a href="Borrowers/BorrowerEmployment.html">
+                                <li>Borrower Employment</li>
+                            </a>
+                            <a href="Borrowers/CoBorrowerEmployment.html">
+                                <li>Co-Borrower Employment</li>
+                            </a>
+                        </ul>
+                        <button class="btn btn-defualt btn-main">Property</button>
+                        <ul>
+                            <a href="Property/LoanPurpose.html">
+                                <li>Loan Purpose</li>
+                            </a>
+                            <a href="Property/PropertyLocation.html">
+                                <li>Property Location</li>
+                            </a>
+                            <a href="Property/ConstructionLocation.html">
+                                <li>Contruction Location</li>
+                            </a>
+                            <a href="Property/LoanInfo.html">
+                                <li>Loan Information</li>
+                            </a>
+                        </ul>
+                        <button class="btn btn-defualt btn-main">Finances</button>
+                        <ul class="btn-list">
+                            <li>Joint Statement of Assets and Liabilities</li>
+                            <li>Borrower Income</li>
+                            <li>Co-Borrower Income</li>
+                            <li>Borrower-Combined Housing</li>
+                            <li>Borrower Real Estate Owned</li>
+                            <li>Borrower Liquid Assets</li>
+                            <li>Borrower Other Assets</li>
+                            <li>Borrower Liabilities</li>
+                        </ul>
+                        <button class="btn btn-defualt btn-main">Disclosures</button>
+                        <ul class="btn-list">
+                            <li>Declarations</li>
+                            <li>HxsA</li>
+                            <li>Finish</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/functions.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script>
+
+
+    </script>
+
+</body>
+
+</html>
