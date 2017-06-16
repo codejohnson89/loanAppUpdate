@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://use.fontawesome.com/d11c41d7e5.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="../LoanAppStyle.css">
+
+    <title>Loan App Frame</title>
+
+    <!--  -->
+
+    <style>
+        .fa {
+            font-size: 24px;
+        }
+        
+        .list-group {
+            display: inline;
+            width: 110px;
+        }
+        
+        ::-webkit-input-placeholder {
+            color: green;
+            margin: 0 auto;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-4 hidden-xs section-info">
+                <img class="img-responsive img-circle stf-profile hidden-xs" src="http://shackmanlab.org/wp-content/uploads/2013/07/person-placeholder.jpg" width="200">
+                <div class="col-xs-12">
+                    <button class="btn btn-defualt btn-main">Borrowers</button>
+                    <ul>
+                        <a href="Borrowers/LoanAppBorrowerInfo.html">
+                            <li>Borrower Information</li>
+                        </a>
+                        <a href="Borrowers/LoanAppCoBorrowerInfo.html">
+                            <li>Co-Borrower Information</li>
+                        </a>
+                        <a href="Borrowers/CurrentAddress.html">
+                            <li>Current Address</li>
+                        </a>
+                        <a href="Borrowers/Co-CurrentAddress.html">
+                            <li>Co-Borrower Address</li>
+                        </a>
+                        <a href="Borrowers/BorrowerEmployment.html">
+                            <li>Borrower Employment</li>
+                        </a>
+                        <a href="Borrowers/CoBorrowerEmployment.html">
+                            <li>Co-Borrower Employment</li>
+                        </a>
+                    </ul>
+                    <button class="btn btn-defualt btn-main">Property</button>
+                    <ul>
+                        <a href="Property/LoanPurpose.html">
+                            <li>Loan Purpose</li>
+                        </a>
+                        <a href="Property/PropertyLocation.html">
+                            <li>Property Location</li>
+                        </a>
+                        <a href="Property/ConstructionLocation.html">
+                            <li>Contruction Location</li>
+                        </a>
+                        <a href="Property/LoanInfo.html">
+                            <li>Loan Information</li>
+                        </a>
+                    </ul>
+                    <button class="btn btn-defualt btn-main">Finances</button>
+                    <ul class="btn-list">
+                        <li>Joint Statement of Assets and Liabilities</li>
+                        <li>Borrower Income</li>
+                        <li>Co-Borrower Income</li>
+                        <li>Borrower-Combined Housing</li>
+                        <li>Borrower Real Estate Owned</li>
+                        <li>Borrower Liquid Assets</li>
+                        <li>Borrower Other Assets</li>
+                        <li>Borrower Liabilities</li>
+                    </ul>
+                    <button class="btn btn-defualt btn-main">Disclosures</button>
+                    <ul class="btn-list">
+                        <li>Declarations</li>
+                        <li>HMDA</li>
+                        <li>Finish</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-8 col-xs-12 loan-form">
+                <div class="col-xs-12 header">
+                    <div class="col-sm-6 col-xs-4">
+                        <label id="lblStaff">Staff Name Placeholder</label>
+                        <br>
+                        <label id="lblStaffPhone">866-300-1550</label>
+                    </div>
+                    <div class="col-xs-4 visible-xs text-center">
+                        <a data-toggle="modal" data-target="#helpMenu">
+                            <button style="width: 5em">Menu</button>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-xs-4 head-btn">
+                        <a href="BorrowerEmployment.html">
+                            <i class="fa fa-backward hidden-md hidden-lg" aria-hidden="true"></i>
+                            <button class="hidden-xs hidden-sm">Previous</button>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-floppy-o hidden-md hidden-lg" aria-hidden="true"></i>
+                            <button class="hidden-xs hidden-sm">Save</button>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-forward hidden-md hidden-lg" aria-hidden="true"></i>
+                            <button class="hidden-xs hidden-sm">Next</button>
+                        </a>
+
+                    </div>
+                </div>
+                <form>
+                    <h3>Borrower-Combined Housing</h3>
+                    <p style="text-align: center">Enter amounts for your present rent and/or mortgage payments in the first column and proposed amounts for the new property or refinance of existing property in the second column. The totals will calculate automatically.</p>
+                    <div class="col-sm-12 ">
+
+                        <div class="col-sm-6">
+                            <label>Rent</label>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control list-group" id="App_Ctrl_361" placeholder="Present" data-placement="top" data-toggle="popover" data-trigger="trigger" title="Present Amount" data-content="Please enter the Present amount for RENT in this column.">
+
+
+
+                        </div>
+
+                    </div>
+                    <hr>
+                    <div class="col-sm-12">
+
+                        <div class="col-sm-6">
+                            <label>First Mortgage P&amp;I</label>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control list-group" id="App_Ctrl_362" placeholder="Present" data-placement="top" data-toggle="popover" data-trigger="trigger" title="Present Amount" data-content="Please enter the Present amount for First Mortgage P&amp;I in this column.">
+
+
+                            <input type="text" class="form-control list-group" id="App_Ctrl_369" placeholder="Proposed" data-placement="top" data-toggle="popover" data-trigger="trigger" title="Proposed Amount" data-content="Please enter the Proposed amount for the new property/refinance of existing property&#39;s First Mortgage P&amp;I in this column.">
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+
+                        <div class="col-sm-6">
+                            <label>Other Financing</label>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control list-group" id="App_Ctrl_363" placeholder="Present" data-placement="top" data-toggle="popover" data-trigger="trigger" title="Present Amount" data-content="Please enter the Present amount for Other Financing in this column.">
+
+
+                            <input type="text" class="form-control list-group" id="App_Ctrl_370" placeholder="Proposed" data-placement="top" data-toggle="popover" data-trigger="trigger" title="Proposed Amount" data-content="Please enter the Proposed amount for the new property/refinance of existing property&#39;s Other Financing in this column.">
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+
+                        <div class="col-sm-6">
+                            <label>Hazard Insurance</label>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control list-group" id="App_Ctrl_364" placeholder="Present" data-placement="top" data-toggle="popover" data-trigger="trigger" title="Present Amount" data-content="Please enter the Present amount for Hazard Insurance in this column.">
+
+
+                            <input type="text" class="form-control list-group" id="App_Ctrl_371" placeholder="Proposed" data-placement="top" data-toggle="popover" data-trigger="trigger" title="Proposed Amount" data-content="Please enter the Proposed amount for the new property/refinance of existing property&#39;s Hazard Insurance in this column.">
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+
+                        <div class="col-sm-6">
+                            <label>Real Estate Taxes</label>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control list-group" id="App_Ctrl_365" placeholder="Present" data-placement="top" data-toggle="popover" data-trigger="trigger" title="Present Amount" data-content="Please enter the Present amount for Real Estate Taxes in this column.">
+
+
+                            <input type="text" class="form-control list-group" id="App_Ctrl_372" placeholder="Proposed" data-placement="top" data-toggle="popover" data-trigger="trigger" title="Proposed Amount" data-content="Please enter the Proposed amount for the new property/refinance of existing property&#39;s Real Estate Taxes in this column.">
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+
+                        <div class="col-sm-6">
+                            <label>Mortgage Insurance</label>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control list-group" id="App_Ctrl_366" placeholder="Present" data-placement="top" data-toggle="popover" data-trigger="trigger" title="Present Amount" data-content="Please enter the Present amount for Mortgage Insurance in this column.">
+
+
+                            <input type="text" class="form-control list-group" id="App_Ctrl_373" placeholder="Proposed" data-placement="top" data-toggle="popover" data-trigger="trigger" title="Proposed Amount" data-content="Please enter the Proposed amount for the new property/refinance of existing property&#39;s Mortgage Insurance in this column.">
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+
+                        <div class="col-sm-6">
+                            <label>Homeowner Association Dues</label>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control list-group" id="App_Ctrl_367" placeholder="Present" data-placement="top" data-toggle="popover" data-trigger="trigger" title="Present Amount" data-content="Please enter the Present amount for Homeowner Association Dues in this column.">
+
+
+                            <input type="text" class="form-control list-group" id="App_Ctrl_374" placeholder="Proposed" data-placement="top" data-toggle="popover" data-trigger="trigger" title="Proposed Amount" data-content="Please enter the Proposed amount for the new property/refinance of existing property&#39;s Homeowner Association Dues in this column.">
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+
+                        <div class="col-sm-6">
+                            <label>Other</label>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control list-group" id="App_Ctrl_368" placeholder="Present" data-placement="top" data-toggle="popover" data-trigger="trigger" title="Present Amount" data-content="Please enter the Present amount for Other Amounts in this column.">
+
+
+                            <input type="text" class="form-control list-group" id="App_Ctrl_375" placeholder="Proposed" data-placement="top" data-toggle="popover" data-trigger="trigger" title="Proposed Amount" data-content="Please enter the Proposed amount for the new property/refinance of existing property&#39;s Other Amounts in this column.">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12">
+
+                        <div class="col-sm-6">
+                            <label>Total</label>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" disabled="true" class="form-control list-group" id="App_Ctrl_376">
+
+
+                            <input type="text" disabled="true" class="form-control list-group" id="App_Ctrl_377">
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="col-xs-12 head-btn loan-footer text-right">
+                        <a href="BorrowerEmployment.html">
+                            <i class="fa fa-backward hidden-md hidden-lg" aria-hidden="true"></i>
+                            <button class="hidden-xs hidden-sm">Previous</button>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-floppy-o hidden-md hidden-lg" aria-hidden="true"></i>
+                            <button class="hidden-xs hidden-sm">Save</button>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-forward hidden-md hidden-lg" aria-hidden="true"></i>
+                            <button class="hidden-xs hidden-sm">Next</button>
+                        </a>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!------The link for the icon for the clickable modal popups----------------------------->
+
+
+
+        <div id="" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Online Help</h5>
+                    </div>
+                    <div class="modal-body">
+                        <h6></h6>
+                        <p></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="helpMenu" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Loan App Menu</h5>
+                    </div>
+                    <div class="modal-body">
+
+                        <button class="btn btn-defualt btn-main">Borrowers</button>
+                        <ul>
+                            <a href="Borrowers/LoanAppBorrowerInfo.html">
+                                <li>Borrower Information</li>
+                            </a>
+                            <a href="Borrowers/LoanAppCoBorrowerInfo.html">
+                                <li>Co-Borrower Information</li>
+                            </a>
+                            <a href="Borrowers/CurrentAddress.html">
+                                <li>Current Address</li>
+                            </a>
+                            <a href="Borrowers/Co-CurrentAddress.html">
+                                <li>Co-Borrower Address</li>
+                            </a>
+                            <a href="Borrowers/BorrowerEmployment.html">
+                                <li>Borrower Employment</li>
+                            </a>
+                            <a href="Borrowers/CoBorrowerEmployment.html">
+                                <li>Co-Borrower Employment</li>
+                            </a>
+                        </ul>
+                        <button class="btn btn-defualt btn-main">Property</button>
+                        <ul>
+                            <a href="Property/LoanPurpose.html">
+                                <li>Loan Purpose</li>
+                            </a>
+                            <a href="Property/PropertyLocation.html">
+                                <li>Property Location</li>
+                            </a>
+                            <a href="Property/ConstructionLocation.html">
+                                <li>Contruction Location</li>
+                            </a>
+                            <a href="Property/LoanInfo.html">
+                                <li>Loan Information</li>
+                            </a>
+                        </ul>
+                        <button class="btn btn-defualt btn-main">Finances</button>
+                        <ul class="btn-list">
+                            <li>Joint Statement of Assets and Liabilities</li>
+                            <li>Borrower Income</li>
+                            <li>Co-Borrower Income</li>
+                            <li>Borrower-Combined Housing</li>
+                            <li>Borrower Real Estate Owned</li>
+                            <li>Borrower Liquid Assets</li>
+                            <li>Borrower Other Assets</li>
+                            <li>Borrower Liabilities</li>
+                        </ul>
+                        <button class="btn btn-defualt btn-main">Disclosures</button>
+                        <ul class="btn-list">
+                            <li>Declarations</li>
+                            <li>HxsA</li>
+                            <li>Finish</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/functions.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('[data-toggle="popover"]').popover();
+        });
+
+    </script>
+
+</body>
+
+</html>
