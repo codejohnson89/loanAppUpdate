@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://use.fontawesome.com/d11c41d7e5.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="../LoanAppStyle.css">
+
+    <title>Loan App Frame</title>
+
+    <!--  -->
+
+    <style>
+        .fa {
+            font-size: 24px;
+        }
+        
+        p {
+            font-size: 12px;
+        }
+        
+        .right-side {
+            border-right: 1px solid #333;
+        }
+        
+        @media (max-width: 442px) {
+            p {
+                font-size: 11px;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-4 hidden-xs section-info">
+                <img class="img-responsive img-circle stf-profile hidden-xs" src="http://shackmanlab.org/wp-content/uploads/2013/07/person-placeholder.jpg" width="200">
+                <div class="col-sm-12">
+                    <button class="btn btn-defualt btn-main">Borrowers</button>
+                    <ul>
+                        <a href="Borrowers/LoanAppBorrowerInfo.html">
+                            <li>Borrower Information</li>
+                        </a>
+                        <a href="Borrowers/LoanAppCoBorrowerInfo.html">
+                            <li>Co-Borrower Information</li>
+                        </a>
+                        <a href="Borrowers/CurrentAddress.html">
+                            <li>Current Address</li>
+                        </a>
+                        <a href="Borrowers/Co-CurrentAddress.html">
+                            <li>Co-Borrower Address</li>
+                        </a>
+                        <a href="Borrowers/BorrowerEmployment.html">
+                            <li>Borrower Employment</li>
+                        </a>
+                        <a href="Borrowers/CoBorrowerEmployment.html">
+                            <li>Co-Borrower Employment</li>
+                        </a>
+                    </ul>
+                    <button class="btn btn-defualt btn-main">Property</button>
+                    <ul>
+                        <a href="Property/LoanPurpose.html">
+                            <li>Loan Purpose</li>
+                        </a>
+                        <a href="Property/PropertyLocation.html">
+                            <li>Property Location</li>
+                        </a>
+                        <a href="Property/ConstructionLocation.html">
+                            <li>Contruction Location</li>
+                        </a>
+                        <a href="Property/LoanInfo.html">
+                            <li>Loan Information</li>
+                        </a>
+                    </ul>
+                    <button class="btn btn-defualt btn-main">Finances</button>
+                    <ul class="btn-list">
+                        <li>Joint Statement of Assets and Liabilities</li>
+                        <li>Borrower Income</li>
+                        <li>Co-Borrower Income</li>
+                        <li>Borrower-Combined Housing</li>
+                        <li>Borrower Real Estate Owned</li>
+                        <li>Borrower Liquid Assets</li>
+                        <li>Borrower Other Assets</li>
+                        <li>Borrower Liabilities</li>
+                    </ul>
+                    <button class="btn btn-defualt btn-main">Disclosures</button>
+                    <ul class="btn-list">
+                        <li>Declarations</li>
+                        <li>HMDA</li>
+                        <li>Finish</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-8 col-sm-12 loan-form">
+                <div class="col-xs-12 header">
+                    <div class="col-sm-6 col-xs-4">
+                        <label id="lblStaff">Staff Name Placeholder</label>
+                        <br>
+                        <label id="lblStaffPhone">866-300-1550</label>
+                    </div>
+                    <div class="col-xs-4 visible-xs text-center">
+                        <a data-toggle="modal" data-target="#helpMenu">
+                            <button style="width: 5em">Menu</button>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-xs-4 head-btn">
+                        <a href="BorrowerEmployment.html">
+                            <i class="fa fa-backward hidden-md hidden-lg" aria-hidden="true"></i>
+                            <button class="hidden-xs hidden-sm">Previous</button>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-floppy-o hidden-md hidden-lg" aria-hidden="true"></i>
+                            <button class="hidden-xs hidden-sm">Save</button>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-forward hidden-md hidden-lg" aria-hidden="true"></i>
+                            <button class="hidden-xs hidden-sm">Next</button>
+                        </a>
+
+                    </div>
+                </div>
+                <form>
+                    <h3>Declarations</h3>
+                    <br>
+                    <h4 style="text-align: center; border-bottom: 1px solid #333">Borrower</h4>
+                    <p>Are there any outstanding judgements against you?</p>
+                    <br>
+                    <label>Yes</label>
+                    <input type="radio" class="form-control radio-btn" id="App_Ctrl_155_rdo_1" name="App_Ctrl_155_rdo" value="37" style="width: 12px; ">
+                    <label>No</label>
+                    <input type="radio" class="form-control radio-btn" id="App_Ctrl_155_rdo_2" name="App_Ctrl_155_rdo" value="38" style="width: 12px; ">
+                    <br>
+                    <p>Have you been declared bankrupt within the past 7 years?</p>
+                    <br>
+                    <label>Yes</label>
+                    <input type="radio" class="form-control radio-btn" id="App_Ctrl_157_rdo_1" name="App_Ctrl_157_rdo" value="37" style="width: 12px; ">
+                    <label>No</label>
+                    <input type="radio" class="form-control radio-btn" id="App_Ctrl_157_rdo_2" name="App_Ctrl_157_rdo" value="38" style="width: 12px; ">
+                    <br>
+                    <p>Have you had property foreclosed upon or given title or deed in lieu thereof in the last 7 years?</p>
+                    <br>
+                    <label>Yes</label>
+                    <input type="radio" class="form-control radio-btn" id="App_Ctrl_159_rdo_1" name="App_Ctrl_159_rdo" value="37" style="width: 12px; ">
+                    <label>No</label>
+                    <input type="radio" class="form-control radio-btn" id="App_Ctrl_159_rdo_2" name="App_Ctrl_159_rdo" value="38" style="width: 12px; ">
+                    <br>
+                    <p>Are you a party to a lawsuit?</p>
+                    <br>
+                    <label>Yes</label>
+                    <input type="radio" class="form-control radio-btn" id="App_Ctrl_161_rdo_1" name="App_Ctrl_161_rdo" value="37" style="width: 12px; ">
+                    <label>No</label>
+                    <input type="radio" class="form-control radio-btn" id="App_Ctrl_161_rdo_2" name="App_Ctrl_161_rdo" value="38" style="width: 12px; ">
+                    <br>
+                    <p>Have you directly or indirectly been obligated on any loan which resulted in foreclosure, transfer of title in lieu of foreclosure, or judgement?</p>
+                    <br>
+                    <label>Yes</label>
+                    <input type="radio" class="form-control radio-btn" id="App_Ctrl_163_rdo_1" name="App_Ctrl_163_rdo" value="37" style="width: 12px; ">
+                    <label>No</label>
+                    <input type="radio" class="form-control radio-btn" id="App_Ctrl_163_rdo_2" name="App_Ctrl_163_rdo" value="38" style="width: 12px; ">
+                    <br>
+                    <p>Are you presently delinquent or in default on any Federal debt or any other loan, mortgage, financial obligation, bond, or loan guarantee?</p>
+                    <br>
+                    <label>Yes</label>
+                    <input type="radio" class="form-control radio-btn" id="App_Ctrl_165_rdo_1" name="App_Ctrl_165_rdo" value="37" style="width: 12px; ">
+                    <label>No</label>
+                    <input type="radio" class="form-control radio-btn" id="App_Ctrl_165_rdo_2" name="App_Ctrl_165_rdo" value="38" style="width: 12px; ">
+                    <br>
+                    <p>Are you obligated to pay alimony, child support, or separate maintenance?</p>
+                    <br>
+                    <label>Yes</label>
+                    <input type="radio" class="form-control radio-btn" id="App_Ctrl_167_rdo_1" name="App_Ctrl_167_rdo" value="37" style="width: 12px; ">
+                    <label>No</label>
+                    <input type="radio" class="form-control radio-btn" id="App_Ctrl_167_rdo_2" name="App_Ctrl_167_rdo" value="38" style="width: 12px; ">
+                    <br>
+                    <p>Is any part of the down payment borrowed?</p>
+                    <br>
+                    <label>Yes</label>
+                    <input type="radio" class="form-control radio-btn" id="App_Ctrl_169_rdo_1" name="App_Ctrl_169_rdo" value="37" style="width: 12px; ">
+                    <label>No</label>
+                    <input type="radio" class="form-control radio-btn" id="App_Ctrl_169_rdo_2" name="App_Ctrl_169_rdo" value="38" style="width: 12px; ">
+                    <br>
+                    <p>Are you a co-maker or endorser on a note?</p>
+                    <br>
+                    <label>Yes</label>
+                    <input type="radio" class="form-control radio-btn" id="App_Ctrl_171_rdo_1" name="App_Ctrl_171_rdo" value="37" style="width: 12px; ">
+                    <label>No</label>
+                    <input type="radio" class="form-control radio-btn" id="App_Ctrl_171_rdo_2" name="App_Ctrl_171_rdo" value="38" style="width: 12px; ">
+                    <br>
+                    <p>Are you a U.S. Citizen?</p>
+                    <br>
+                    <label>Yes</label>
+                    <input type="radio" class="form-control radio-btn" id="App_Ctrl_424_rdo_1" name="App_Ctrl_424_rdo" value="37" style="width: 12px; ">
+                    <label>No</label>
+                    <input type="radio" class="form-control radio-btn" id="App_Ctrl_424_rdo_2" name="App_Ctrl_424_rdo" value="38" style="width: 12px; ">
+                    <br>
+                    <p>Are you a permanent resident alien?</p>
+                    <br>
+                    <label>Yes</label>
+                    <input type="radio" class="form-control radio-btn" id="App_Ctrl_173_rdo_1" name="App_Ctrl_173_rdo" value="37" style="width: 12px; ">
+                    <label>No</label>
+                    <input type="radio" class="form-control radio-btn" id="App_Ctrl_173_rdo_2" name="App_Ctrl_173_rdo" value="38" style="width: 12px; ">
+                    <br>
+                    <p>Do you intend to occupy the property as your primary residence?</p>
+                    <br>
+                    <label>Yes</label>
+                    <input type="radio" class="form-control radio-btn" id="App_Ctrl_175_rdo_1" name="App_Ctrl_175_rdo" value="37" style="width: 12px; ">
+                    <label>No</label>
+                    <input type="radio" class="form-control radio-btn" id="App_Ctrl_175_rdo_2" name="App_Ctrl_175_rdo" value="38" style="width: 12px; ">
+                    <br>
+                    <p>Have you had an ownership interest in a property in the last three years?</p>
+                    <br>
+                    <label>Yes</label>
+                    <input type="radio" class="form-control radio-btn" id="App_Ctrl_177_rdo_1" name="App_Ctrl_177_rdo" value="37" style="width: 12px; ">
+                    <label>No</label>
+                    <input type="radio" class="form-control radio-btn" id="App_Ctrl_177_rdo_2" name="App_Ctrl_177_rdo" value="38" style="width: 12px; ">
+                    <br>
+
+
+
+                    <!--------------------------This is the co borrower's declaration--------------------->
+                    <section class="cobo">
+                        <h4 style="text-align: center; border-bottom: 1px solid #333">Co-Borrower</h4>
+                        <p>Are there any outstanding judgements against you?</p>
+                        <br>
+                        <label>Yes</label>
+                        <input type="radio" class="form-control radio-btn" id="App_Ctrl_156_rdo_1" name="App_Ctrl_156_rdo" value="37" style="width: 12px; ">
+                        <label>No</label>
+                        <input type="radio" class="form-control radio-btn" id="App_Ctrl_156_rdo_2" name="App_Ctrl_156_rdo" value="38" style="width: 12px; ">
+                        <br>
+                        <p>Have you been declared bankrupt within the past 7 years?</p>
+                        <br>
+                        <label>Yes</label>
+                        <input type="radio" class="form-control radio-btn" id="App_Ctrl_158_rdo_1" name="App_Ctrl_158_rdo" value="37" style="width: 12px; ">
+                        <label>No</label>
+                        <input type="radio" class="form-control radio-btn" id="App_Ctrl_158_rdo_2" name="App_Ctrl_158_rdo" value="38" style="width: 12px; ">
+                        <br>
+                        <p>Have you had property foreclosed upon or given title or deed in lieu thereof in the last 7 years?</p>
+                        <br>
+                        <label>Yes</label>
+                        <input type="radio" class="form-control radio-btn" id="App_Ctrl_160_rdo_1" name="App_Ctrl_160_rdo" value="37" style="width: 12px; ">
+                        <label>No</label>
+                        <input type="radio" class="form-control radio-btn" id="App_Ctrl_160_rdo_2" name="App_Ctrl_160_rdo" value="38" style="width: 12px; ">
+                        <br>
+                        <p>Are you a party to a lawsuit?</p>
+                        <br>
+                        <label>Yes</label>
+                        <input type="radio" class="form-control radio-btn" id="App_Ctrl_162_rdo_1" name="App_Ctrl_162_rdo" value="37" style="width: 12px; ">
+                        <label>No</label>
+                        <input type="radio" class="form-control radio-btn" id="App_Ctrl_162_rdo_2" name="App_Ctrl_162_rdo" value="38" style="width: 12px; ">
+                        <br>
+                        <p>Have you directly or indirectly been obligated on any loan which resulted in foreclosure, transfer of title in lieu of foreclosure, or judgement?</p>
+                        <br>
+                        <label>Yes</label>
+                        <input type="radio" class="form-control radio-btn" id="App_Ctrl_164_rdo_1" name="App_Ctrl_164_rdo" value="37" style="width: 12px; ">
+                        <label>No</label>
+                        <input type="radio" class="form-control radio-btn" id="App_Ctrl_164_rdo_2" name="App_Ctrl_164_rdo" value="38" style="width: 12px; ">
+                        <br>
+                        <p>Are you presently delinquent or in default on any Federal debt or any other loan, mortgage, financial obligation, bond, or loan guarantee?</p>
+                        <br>
+                        <label>Yes</label>
+                        <input type="radio" class="form-control radio-btn" id="App_Ctrl_166_rdo_1" name="App_Ctrl_166_rdo" value="37" style="width: 12px; ">
+                        <label>No</label>
+                        <input type="radio" class="form-control radio-btn" id="App_Ctrl_166_rdo_2" name="App_Ctrl_166_rdo" value="38" style="width: 12px; ">
+                        <br>
+                        <p>Are you obligated to pay alimony, child support, or separate maintenance?</p>
+                        <br>
+                        <label>Yes</label>
+                        <input type="radio" class="form-control radio-btn" id="App_Ctrl_168_rdo_1" name="App_Ctrl_168_rdo" value="37" style="width: 12px; ">
+                        <label>No</label>
+                        <input type="radio" class="form-control radio-btn" id="App_Ctrl_168_rdo_2" name="App_Ctrl_168_rdo" value="38" style="width: 12px; ">
+                        <br>
+                        <p>Is any part of the down payment borrowed?</p>
+                        <br>
+                        <label>Yes</label>
+                        <input type="radio" class="form-control radio-btn" id="App_Ctrl_170_rdo_1" name="App_Ctrl_170_rdo" value="37" style="width: 12px; ">
+                        <label>No</label>
+                        <input type="radio" class="form-control radio-btn" id="App_Ctrl_170_rdo_2" name="App_Ctrl_170_rdo" value="38" style="width: 12px; ">
+                        <br>
+                        <p>Are you a co-maker or endorser on a note?</p>
+                        <br>
+                        <label>Yes</label>
+                        <input type="radio" class="form-control radio-btn" id="App_Ctrl_172_rdo_1" name="App_Ctrl_172_rdo" value="37" style="width: 12px; ">
+                        <label>No</label>
+                        <input type="radio" class="form-control radio-btn" id="App_Ctrl_172_rdo_2" name="App_Ctrl_172_rdo" value="38" style="width: 12px; ">
+                        <br>
+                        <p>Are you a U.S. Citizen?</p>
+                        <br>
+                        <label>Yes</label>
+                        <input type="radio" class="form-control radio-btn" id="App_Ctrl_425_rdo_1" name="App_Ctrl_425_rdo" value="37" style="width: 12px; ">
+                        <label>No</label>
+                        <input type="radio" class="form-control radio-btn" id="App_Ctrl_425_rdo_2" name="App_Ctrl_425_rdo" value="38" style="width: 12px; ">
+                        <br>
+                        <p>Are you a permanent resident alien?</p>
+                        <br>
+                        <label>Yes</label>
+                        <input type="radio" class="form-control radio-btn" id="App_Ctrl_174_rdo_1" name="App_Ctrl_174_rdo" value="37" style="width: 12px; ">
+                        <label>No</label>
+                        <input type="radio" class="form-control radio-btn" id="App_Ctrl_174_rdo_2" name="App_Ctrl_174_rdo" value="38" style="width: 12px; ">
+                        <br>
+                        <p>Do you intend to occupy the property as your primary residence?</p>
+                        <br>
+                        <label>Yes</label>
+                        <input type="radio" class="form-control radio-btn" id="App_Ctrl_176_rdo_1" name="App_Ctrl_176_rdo" value="37" style="width: 12px; ">
+                        <label>No</label>
+                        <input type="radio" class="form-control radio-btn" id="App_Ctrl_176_rdo_2" name="App_Ctrl_176_rdo" value="38" style="width: 12px; ">
+                        <br>
+                        <p>Have you had an ownership interest in a property in the last three years?</p>
+                        <br>
+                        <label>Yes</label>
+                        <input type="radio" class="form-control radio-btn" id="App_Ctrl_178_rdo_1" name="App_Ctrl_178_rdo" value="37" style="width: 12px; ">
+                        <label>No</label>
+                        <input type="radio" class="form-control radio-btn" id="App_Ctrl_178_rdo_2" name="App_Ctrl_178_rdo" value="38" style="width: 12px; ">
+                    </section>
+                    <div class="col-sm-12 head-btn loan-footer text-right">
+                        <a href="BorrowerEmployment.html">
+                            <i class="fa fa-backward hidden-md hidden-lg" aria-hidden="true"></i>
+                            <button class="hidden-xs hidden-sm">Previous</button>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-floppy-o hidden-md hidden-lg" aria-hidden="true"></i>
+                            <button class="hidden-xs hidden-sm">Save</button>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-forward hidden-md hidden-lg" aria-hidden="true"></i>
+                            <button class="hidden-xs hidden-sm">Next</button>
+                        </a>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!------The link for the icon for the clickable modal popups----------------------------->
+
+
+
+        <div id="" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Online Help</h5>
+                    </div>
+                    <div class="modal-body">
+                        <h6></h6>
+                        <p></p>
+                        <br>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="helpMenu" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Loan App Menu</h5>
+                    </div>
+                    <div class="modal-body">
+
+                        <button class="btn btn-defualt btn-main">Borrowers</button>
+                        <ul>
+                            <a href="Borrowers/LoanAppBorrowerInfo.html">
+                                <li>Borrower Information</li>
+                            </a>
+                            <a href="Borrowers/LoanAppCoBorrowerInfo.html">
+                                <li>Co-Borrower Information</li>
+                            </a>
+                            <a href="Borrowers/CurrentAddress.html">
+                                <li>Current Address</li>
+                            </a>
+                            <a href="Borrowers/Co-CurrentAddress.html">
+                                <li>Co-Borrower Address</li>
+                            </a>
+                            <a href="Borrowers/BorrowerEmployment.html">
+                                <li>Borrower Employment</li>
+                            </a>
+                            <a href="Borrowers/CoBorrowerEmployment.html">
+                                <li>Co-Borrower Employment</li>
+                            </a>
+                        </ul>
+                        <button class="btn btn-defualt btn-main">Property</button>
+                        <ul>
+                            <a href="Property/LoanPurpose.html">
+                                <li>Loan Purpose</li>
+                            </a>
+                            <a href="Property/PropertyLocation.html">
+                                <li>Property Location</li>
+                            </a>
+                            <a href="Property/ConstructionLocation.html">
+                                <li>Contruction Location</li>
+                            </a>
+                            <a href="Property/LoanInfo.html">
+                                <li>Loan Information</li>
+                            </a>
+                        </ul>
+                        <button class="btn btn-defualt btn-main">Finances</button>
+                        <ul class="btn-list">
+                            <li>Joint Statement of Assets and Liabilities</li>
+                            <li>Borrower Income</li>
+                            <li>Co-Borrower Income</li>
+                            <li>Borrower-Combined Housing</li>
+                            <li>Borrower Real Estate Owned</li>
+                            <li>Borrower Liquid Assets</li>
+                            <li>Borrower Other Assets</li>
+                            <li>Borrower Liabilities</li>
+                        </ul>
+                        <button class="btn btn-defualt btn-main">Disclosures</button>
+                        <ul class="btn-list">
+                            <li>Declarations</li>
+                            <li>HxsA</li>
+                            <li>Finish</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/functions.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script>
+
+
+    </script>
+
+</body>
+
+</html>

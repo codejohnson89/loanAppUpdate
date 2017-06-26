@@ -57,3 +57,40 @@ function loanPurp() {
         $(".section2").css("display", "block");
     }
 }
+
+//Left Side navigation menu button display function
+function menuButton1() {
+    $(".btn-list-1").css("display", "block");
+    $(".btn-list-2").css("display", "none");
+    $(".btn-list-3").css("display", "none");
+    $(".btn-list-4").css("display", "none");
+}
+
+function menuButton2() {
+    $(".btn-list-1").css("display", "none");
+    $(".btn-list-2").css("display", "block");
+    $(".btn-list-3").css("display", "none");
+    $(".btn-list-4").css("display", "none");
+}
+
+function menuButton3() {
+    $(".btn-list-1").css("display", "none");
+    $(".btn-list-2").css("display", "none");
+    $(".btn-list-3").css("display", "block");
+    $(".btn-list-4").css("display", "none");
+}
+
+function menuButton4() {
+    $(".btn-list-1").css("display", "none");
+    $(".btn-list-2").css("display", "none");
+    $(".btn-list-3").css("display", "none");
+    $(".btn-list-4").css("display", "block");
+}
+
+//This functions will determine if any fields display for the co-borrower if checked
+
+function displayCoBorrower() {
+    if (document.getElementById("test").checked) {
+        $(".cobo").css("display", "block");
+    }
+}
