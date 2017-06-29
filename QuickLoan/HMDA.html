@@ -5,8 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
-    <script src="https://use.fontawesome.com/d11c41d7e5.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="LoanAppStyle.css">
+    <script src="https://use.fontawesome.com/d11c41d7e5.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="../LoanAppStyle.css">
 
     <title>Loan App Frame</title>
 
@@ -25,13 +26,19 @@
         <div class="row">
 
             <div class="col-sm-4 hidden-xs section-info">
-                <img class="img-responsive img-circle stf-profile hidden-xs" src="http://shackmanlab.org/wp-content/uploads/2013/07/person-placeholder.jpg" width="200">
+                <img class="img-responsive img-circle stf-profile" src="../Images/MJ1.png" width="200">
                 <div class="col-xs-12">
                     <button class="btn btn-defualt btn-main">Borrowers</button>
                     <ul class="btn-list" style="display: block">
-                        <li>Loan Application</li>
-                        <li>HMDA</li>
-                        <li>Finish</li>
+                        <a href="QuickLoanApp.html">
+                            <li>Loan Application</li>
+                        </a>
+                        <a href="HMDA.html">
+                            <li>HMDA</li>
+                        </a>
+                        <a href="QuickFinish.html">
+                            <li>Finish</li>
+                        </a>
 
                     </ul>
 
@@ -53,7 +60,7 @@
                             <i class="fa fa-floppy-o hidden-md hidden-lg" aria-hidden="true"></i>
                             <button class="hidden-xs hidden-sm">Save</button>
                         </a>
-                        <a href="Finish.html">
+                        <a href="QuickFinish.html">
                             <i class="fa fa-forward hidden-md hidden-lg" aria-hidden="true"></i>
                             <button class="hidden-xs hidden-sm">Next</button>
                         </a>
@@ -115,21 +122,7 @@
 
                         </div>
                     </div>
-                    <div class="col-xs-12 head-btn loan-footer text-right">
-                        <a href="QuickLoanApp.html">
-                            <i class="fa fa-backward hidden-md hidden-lg" aria-hidden="true"></i>
-                            <button class="hidden-xs hidden-sm">Previous</button>
-                        </a>
-                        <a href="#">
-                            <i class="fa fa-floppy-o hidden-md hidden-lg" aria-hidden="true"></i>
-                            <button class="hidden-xs hidden-sm">Save</button>
-                        </a>
-                        <a href="Finish.html">
-                            <i class="fa fa-forward hidden-md hidden-lg" aria-hidden="true"></i>
-                            <button class="hidden-xs hidden-sm">Next</button>
-                        </a>
 
-                    </div>
                 </form>
             </div>
         </div>

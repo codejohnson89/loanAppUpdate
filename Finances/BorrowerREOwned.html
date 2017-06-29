@@ -28,60 +28,94 @@
         <div class="row">
 
             <div class="col-sm-4 hidden-xs section-info">
-                <img class="img-responsive img-circle stf-profile hidden-xs" src="http://shackmanlab.org/wp-content/uploads/2013/07/person-placeholder.jpg" width="200">
+                <img class="img-responsive img-circle stf-profile" src="../Images/MJ1.png" width="200">
                 <div class="col-xs-12">
-                    <button class="btn btn-defualt btn-main">Borrowers</button>
-                    <ul>
-                        <a href="Borrowers/LoanAppBorrowerInfo.html">
+                    <button class="btn btn-defualt btn-main" onclick="menuButton1()">Borrowers</button>
+                    <ul class="btn-list-1">
+                        <a href="../Borrowers/LoanAppBorrowerInfo.html">
                             <li>Borrower Information</li>
                         </a>
-                        <a href="Borrowers/LoanAppCoBorrowerInfo.html">
-                            <li>Co-Borrower Information</li>
+                        <a href="../Borrowers/LoanAppCoBorrowerInfo.html">
+                            <li class="cobo">Co-Borrower Information</li>
                         </a>
-                        <a href="Borrowers/CurrentAddress.html">
+                        <a href="../Borrowers/CurrentAddress.html">
                             <li>Current Address</li>
                         </a>
-                        <a href="Borrowers/Co-CurrentAddress.html">
-                            <li>Co-Borrower Address</li>
+                        <a href="../Borrowers/Co-CurrentAddress.html">
+                            <li class="cobo">Co-Borrower Address</li>
                         </a>
-                        <a href="Borrowers/BorrowerEmployment.html">
+                        <a href="../Borrowers/BorrowerEmployment.html">
                             <li>Borrower Employment</li>
                         </a>
-                        <a href="Borrowers/CoBorrowerEmployment.html">
-                            <li>Co-Borrower Employment</li>
+                        <a href="../Borrowers/CoBorrowerEmployment.html">
+                            <li class="cobo">Co-Borrower Employment</li>
                         </a>
                     </ul>
-                    <button class="btn btn-defualt btn-main">Property</button>
-                    <ul>
-                        <a href="Property/LoanPurpose.html">
+                    <button class="btn btn-defualt btn-main" onclick="menuButton2()">Property</button>
+                    <ul class="btn-list-2">
+                        <a href="../Property/LoanPurpose.html">
                             <li>Loan Purpose</li>
                         </a>
-                        <a href="Property/PropertyLocation.html">
+                        <a href="../Property/PropertyLocation.html">
                             <li>Property Location</li>
                         </a>
-                        <a href="Property/ConstructionLocation.html">
+                        <a href="../Property/ConstructionLocation.html">
                             <li>Contruction Location</li>
                         </a>
-                        <a href="Property/LoanInfo.html">
+                        <a href="../Property/LoanInfo.html">
                             <li>Loan Information</li>
                         </a>
                     </ul>
-                    <button class="btn btn-defualt btn-main">Finances</button>
-                    <ul class="btn-list">
-                        <li>Joint Statement of Assets and Liabilities</li>
-                        <li>Borrower Income</li>
-                        <li>Co-Borrower Income</li>
-                        <li>Borrower-Combined Housing</li>
-                        <li>Borrower Real Estate Owned</li>
-                        <li>Borrower Liquid Assets</li>
-                        <li>Borrower Other Assets</li>
-                        <li>Borrower Liabilities</li>
+                    <button class="btn btn-defualt btn-main" onclick="menuButton3()">Finances</button>
+                    <ul class="btn-list-3">
+                        <a href="../Finances/StatementOfAssets.html">
+                            <li>Joint Statement of Assets and Liabilities</li>
+                        </a>
+                        <a href="../Finances/BorrowerIncome.html">
+                            <li>Borrower Income</li>
+                        </a>
+                        <a href="../Finances/Co-BorrowerIncome.html">
+                            <li class="cobo">Co-Borrower Income</li>
+                        </a>
+                        <a href="../Finances/Borrower-Combined-Housing.html">
+                            <li>Borrower-Combined Housing</li>
+                        </a>
+                        <a href="../Finances/BorrowerREOwned.html">
+                            <li>Borrower Real Estate Owned</li>
+                        </a>
+                        <a href="../Finances/BorrowerLiquidAssets.html">
+                            <li>Borrower Liquid Assets</li>
+                        </a>
+                        <a href="../Finances/BorrowerOtherAssets.html">
+                            <li>Borrower Other Assets</li>
+                        </a>
+                        <a href="../Finances/BorrowerLiabilities.html">
+                            <li>Borrower Liabilities</li>
+                        </a>
+                        <a href="../Finances/Co-BorrowerREOwned.html">
+                            <li class="cobo">Co-Borrower Real Estate Owned</li>
+                        </a>
+                        <a href="../Finances/Co-BorrowerLiquidAssets.html">
+                            <li class="cobo">Co-Borrower Liquid Assets</li>
+                        </a>
+                        <a href="../Finances/Co-BorrowerOtherAssets.html">
+                            <li class="cobo">Co-Borrower Other Assets</li>
+                        </a>
+                        <a href="../Finances/Co-BorrowerLiabilities.html">
+                            <li class="cobo">Co-Borrower Liabilities</li>
+                        </a>
                     </ul>
-                    <button class="btn btn-defualt btn-main">Disclosures</button>
-                    <ul class="btn-list">
-                        <li>Declarations</li>
-                        <li>HMDA</li>
-                        <li>Finish</li>
+                    <button class="btn btn-defualt btn-main" onclick="menuButton4()">Disclosures</button>
+                    <ul class="btn-list-4">
+                        <a href="../Disclosures/Declarations.html">
+                            <li>Declarations</li>
+                        </a>
+                        <a href="../Disclosures/HMDAFull.html">
+                            <li>HMDA</li>
+                        </a>
+                        <a href="../Disclosures/Finish.html">
+                            <li>Finish</li>
+                        </a>
                     </ul>
                 </div>
             </div>
@@ -98,7 +132,7 @@
                         </a>
                     </div>
                     <div class="col-sm-6 col-xs-4 head-btn">
-                        <a href="BorrowerEmployment.html">
+                        <a href="Borrower-Combined-Housing.html">
                             <i class="fa fa-backward hidden-md hidden-lg" aria-hidden="true"></i>
                             <button class="hidden-xs hidden-sm">Previous</button>
                         </a>
@@ -106,7 +140,7 @@
                             <i class="fa fa-floppy-o hidden-md hidden-lg" aria-hidden="true"></i>
                             <button class="hidden-xs hidden-sm">Save</button>
                         </a>
-                        <a href="#">
+                        <a href="BorrowerLiquidAssets.html">
                             <i class="fa fa-forward hidden-md hidden-lg" aria-hidden="true"></i>
                             <button class="hidden-xs hidden-sm">Next</button>
                         </a>
@@ -263,7 +297,7 @@
 
                     </div>
                     <div class="col-xs-12 head-btn loan-footer text-right">
-                        <a href="BorrowerEmployment.html">
+                        <a href="Borrower-Combined-Housing.html">
                             <i class="fa fa-backward hidden-md hidden-lg" aria-hidden="true"></i>
                             <button class="hidden-xs hidden-sm">Previous</button>
                         </a>
@@ -271,7 +305,7 @@
                             <i class="fa fa-floppy-o hidden-md hidden-lg" aria-hidden="true"></i>
                             <button class="hidden-xs hidden-sm">Save</button>
                         </a>
-                        <a href="#">
+                        <a href="BorrowerLiquidAssets.html">
                             <i class="fa fa-forward hidden-md hidden-lg" aria-hidden="true"></i>
                             <button class="hidden-xs hidden-sm">Next</button>
                         </a>
@@ -420,58 +454,92 @@
                     </div>
                     <div class="modal-body">
 
-                        <button class="btn btn-defualt btn-main">Borrowers</button>
-                        <ul>
-                            <a href="Borrowers/LoanAppBorrowerInfo.html">
+                        <button class="btn btn-defualt btn-main" onclick="menuButton1()">Borrowers</button>
+                        <ul class="btn-list-1">
+                            <a href="../Borrowers/LoanAppBorrowerInfo.html">
                                 <li>Borrower Information</li>
                             </a>
-                            <a href="Borrowers/LoanAppCoBorrowerInfo.html">
-                                <li>Co-Borrower Information</li>
+                            <a href="../Borrowers/LoanAppCoBorrowerInfo.html">
+                                <li class="cobo">Co-Borrower Information</li>
                             </a>
-                            <a href="Borrowers/CurrentAddress.html">
+                            <a href="../Borrowers/CurrentAddress.html">
                                 <li>Current Address</li>
                             </a>
-                            <a href="Borrowers/Co-CurrentAddress.html">
-                                <li>Co-Borrower Address</li>
+                            <a href="../Borrowers/Co-CurrentAddress.html">
+                                <li class="cobo">Co-Borrower Address</li>
                             </a>
-                            <a href="Borrowers/BorrowerEmployment.html">
+                            <a href="../Borrowers/BorrowerEmployment.html">
                                 <li>Borrower Employment</li>
                             </a>
-                            <a href="Borrowers/CoBorrowerEmployment.html">
-                                <li>Co-Borrower Employment</li>
+                            <a href="../Borrowers/CoBorrowerEmployment.html">
+                                <li class="cobo">Co-Borrower Employment</li>
                             </a>
                         </ul>
-                        <button class="btn btn-defualt btn-main">Property</button>
-                        <ul>
-                            <a href="Property/LoanPurpose.html">
+                        <button class="btn btn-defualt btn-main" onclick="menuButton2()">Property</button>
+                        <ul class="btn-list-2">
+                            <a href="../Property/LoanPurpose.html">
                                 <li>Loan Purpose</li>
                             </a>
-                            <a href="Property/PropertyLocation.html">
+                            <a href="../Property/PropertyLocation.html">
                                 <li>Property Location</li>
                             </a>
-                            <a href="Property/ConstructionLocation.html">
+                            <a href="../Property/ConstructionLocation.html">
                                 <li>Contruction Location</li>
                             </a>
-                            <a href="Property/LoanInfo.html">
+                            <a href="../Property/LoanInfo.html">
                                 <li>Loan Information</li>
                             </a>
                         </ul>
-                        <button class="btn btn-defualt btn-main">Finances</button>
-                        <ul class="btn-list">
-                            <li>Joint Statement of Assets and Liabilities</li>
-                            <li>Borrower Income</li>
-                            <li>Co-Borrower Income</li>
-                            <li>Borrower-Combined Housing</li>
-                            <li>Borrower Real Estate Owned</li>
-                            <li>Borrower Liquid Assets</li>
-                            <li>Borrower Other Assets</li>
-                            <li>Borrower Liabilities</li>
+                        <button class="btn btn-defualt btn-main" onclick="menuButton3()">Finances</button>
+                        <ul class="btn-list-3">
+                            <a href="../Finances/StatementOfAssets.html">
+                                <li>Joint Statement of Assets and Liabilities</li>
+                            </a>
+                            <a href="../Finances/BorrowerIncome.html">
+                                <li>Borrower Income</li>
+                            </a>
+                            <a href="../Finances/Co-BorrowerIncome.html">
+                                <li class="cobo">Co-Borrower Income</li>
+                            </a>
+                            <a href="../Finances/Borrower-Combined-Housing.html">
+                                <li>Borrower-Combined Housing</li>
+                            </a>
+                            <a href="../Finances/BorrowerREOwned.html">
+                                <li>Borrower Real Estate Owned</li>
+                            </a>
+                            <a href="../Finances/BorrowerLiquidAssets.html">
+                                <li>Borrower Liquid Assets</li>
+                            </a>
+                            <a href="../Finances/BorrowerOtherAssets.html">
+                                <li>Borrower Other Assets</li>
+                            </a>
+                            <a href="../Finances/BorrowerLiabilities.html">
+                                <li>Borrower Liabilities</li>
+                            </a>
+                            <a href="../Finances/Co-BorrowerREOwned.html">
+                                <li class="cobo">Co-Borrower Real Estate Owned</li>
+                            </a>
+                            <a href="../Finances/Co-BorrowerLiquidAssets.html">
+                                <li class="cobo">Co-Borrower Liquid Assets</li>
+                            </a>
+                            <a href="../Finances/Co-BorrowerOtherAssets.html">
+                                <li class="cobo">Co-Borrower Other Assets</li>
+                            </a>
+                            <a href="../Finances/Co-BorrowerLiabilities.html">
+                                <li class="cobo">Co-Borrower Liabilities</li>
+                            </a>
                         </ul>
-                        <button class="btn btn-defualt btn-main">Disclosures</button>
-                        <ul class="btn-list">
-                            <li>Declarations</li>
-                            <li>HxsA</li>
-                            <li>Finish</li>
+                        <button class="btn btn-defualt btn-main" onclick="menuButton4()">Disclosures</button>
+                        <ul class="btn-list-4">
+                            <a href="../Disclosures/Declarations.html">
+                                <li>Declarations</li>
+                            </a>
+                            <a href="../Disclosures/HMDAFull.html">
+                                <li>HMDA</li>
+                            </a>
+                            <a href="../Disclosures/Finish.html">
+                                <li>Finish</li>
+                            </a>
                         </ul>
                     </div>
                     <div class="modal-footer">
@@ -482,7 +550,7 @@
         </div>
     </div>
 
-    <script src="scripts/functions.js"></script>
+    <script src="../scripts/functions.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>

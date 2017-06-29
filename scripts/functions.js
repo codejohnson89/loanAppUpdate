@@ -89,8 +89,19 @@ function menuButton4() {
 
 //This functions will determine if any fields display for the co-borrower if checked
 
+
 function displayCoBorrower() {
-    if (document.getElementById("test").checked) {
+
+    var i = 1;
+
+    if (document.getElementById("App_Ctrl_13_rdo_1").checked) {
         $(".cobo").css("display", "block");
+        i++;
+    } else {
+        $(".cobo").css("display", "none");
+    }
+
+    while (i > 1) {
+        $(".cobo").css("display", "none");
     }
 }

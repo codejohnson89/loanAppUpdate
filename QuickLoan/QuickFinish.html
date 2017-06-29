@@ -5,8 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
-    <script src="https://use.fontawesome.com/d11c41d7e5.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="LoanAppStyle.css">
+    <script src="https://use.fontawesome.com/d11c41d7e5.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="../LoanAppStyle.css">
 
     <title>Finish</title>
 
@@ -25,13 +26,19 @@
         <div class="row">
 
             <div class="col-sm-4 hidden-xs section-info">
-                <img class="img-responsive img-circle stf-profile hidden-xs" src="http://shackmanlab.org/wp-content/uploads/2013/07/person-placeholder.jpg" width="200">
+                <img class="img-responsive img-circle stf-profile" src="../Images/MJ1.png" width="200">
                 <div class="col-xs-12">
                     <button class="btn btn-defualt btn-main">Borrowers</button>
                     <ul class="btn-list" style="display: block">
-                        <li>Loan Application</li>
-                        <li>HMDA</li>
-                        <li>Finish</li>
+                        <a href="QuickLoanApp.html">
+                            <li>Loan Application</li>
+                        </a>
+                        <a href="HMDA.html">
+                            <li>HMDA</li>
+                        </a>
+                        <a href="QuickFinish.html">
+                            <li>Finish</li>
+                        </a>
 
                     </ul>
 
@@ -60,7 +67,9 @@
                     <p>Click 'Finish' to send your application.</p>
                     <p>If you're finished with your application and ready to send it to your loan officer, just click 'Finish'. You can also return later to complete your application by clicking on the 'Loan Application' link and selecting 'Finish loan application' under 'Returning Visitors'. Everything you've entered so far has already been saved.</p>
                     <p>Once your application is submitted, you'll receive e-mail notifications as each step of your loan process is completed. You can also log into your own private area of our web site to view the progress of your loan or attach other documents.</p>
-                    <button class="btn btn-default btn-main" style="width: 100px">Finish</button>
+                    <a href="https://www.pipelineroi.com/lending/pricing/">
+                        <button class="btn btn-default btn-main" style="width: 100px">Finish</button>
+                    </a>
                     <h3>DirectFax</h3>
                     <p>Our DirectFax technology allows you to securely attach paper documents to your loan application using any fax machine. Fax the provided cover page along with your documents to the toll free number printed on it. Or, if you already have your documents in an electronic format such as PDF, click here to upload them. Click 'Print Cover Page' and choose the printer to send it to.</p>
                     <button class="btn btn-default btn-main" style="width: 200px">Print Cover Page</button>
@@ -74,13 +83,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
     <script>
-        function title() {
-            if (document.title == "Finish") {
-                window.alert("yes");
-            } else {
 
-            }
-        }
 
     </script>
 
